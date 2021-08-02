@@ -3,7 +3,7 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
@@ -47,6 +47,8 @@
 		D40A066932E8196067802000 /* Pods-WBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBooks.debug.xcconfig"; path = "Target Support Files/Pods-WBooks/Pods-WBooks.debug.xcconfig"; sourceTree = "<group>"; };
 		DAD20BD1F34A46B23B237CFF /* Pods_WBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92AB40CB51E4BA78147F61E /* Pods-WBooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBooksTests.debug.xcconfig"; path = "Target Support Files/Pods-WBooksTests/Pods-WBooksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F03B9E0526B818F800B47EB9 /* ConfigDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigDebug.xcconfig; sourceTree = "<group>"; };
+		F03B9E0626B81A3700B47EB9 /* ConfigRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigRelease.xcconfig; sourceTree = "<group>"; };
 		F0ECB5DA26B32433009FA4B5 /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ECB5DD26B32433009FA4B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F0ECB5DF26B32433009FA4B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -111,8 +113,16 @@
 				E92AB40CB51E4BA78147F61E /* Pods-WBooksTests.debug.xcconfig */,
 				46D53839D7FF3ADB00FA3781 /* Pods-WBooksTests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
+			sourceTree = "<group>";
+		};
+		F03B9E0426B817CC00B47EB9 /* ConfigureFiles */ = {
+			isa = PBXGroup;
+			children = (
+				F03B9E0526B818F800B47EB9 /* ConfigDebug.xcconfig */,
+				F03B9E0626B81A3700B47EB9 /* ConfigRelease.xcconfig */,
+			);
+			path = ConfigureFiles;
 			sourceTree = "<group>";
 		};
 		F0ECB5D126B32433009FA4B5 = {
@@ -140,6 +150,7 @@
 		F0ECB5DC26B32433009FA4B5 /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
+				F03B9E0426B817CC00B47EB9 /* ConfigureFiles */,
 				F0ECB5DD26B32433009FA4B5 /* AppDelegate.swift */,
 				F0ECB5DF26B32433009FA4B5 /* SceneDelegate.swift */,
 				F0ECB5E126B32433009FA4B5 /* ViewController.swift */,
@@ -466,6 +477,7 @@
 /* Begin XCBuildConfiguration section */
 		F0ECB60226B32434009FA4B5 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03B9E0526B818F800B47EB9 /* ConfigDebug.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -527,6 +539,7 @@
 		};
 		F0ECB60326B32434009FA4B5 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F03B9E0626B81A3700B47EB9 /* ConfigRelease.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
