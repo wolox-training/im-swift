@@ -9,11 +9,14 @@
 /* Begin PBXBuildFile section */
 		37238F0CFAA5EE736703BBFF /* Pods_WBooks_WBooksUITests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A2101443B772128D8720A269 /* Pods_WBooks_WBooksUITests.framework */; };
 		77A253240D8BFF301C5A32E0 /* Pods_WBooks.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DAD20BD1F34A46B23B237CFF /* Pods_WBooks.framework */; };
+		F02149A326B864980079295C /* MyCustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02149A226B864980079295C /* MyCustomCell.swift */; };
+		F02149A526B864CC0079295C /* MyCustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = F02149A426B864CC0079295C /* MyCustomCell.xib */; };
+		F02149A726B86AC70079295C /* ViewController2.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02149A626B86AC70079295C /* ViewController2.swift */; };
+		F02149AD26B880550079295C /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F02149AC26B880550079295C /* Images.xcassets */; };
 		F0ECB5DE26B32433009FA4B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECB5DD26B32433009FA4B5 /* AppDelegate.swift */; };
 		F0ECB5E026B32433009FA4B5 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECB5DF26B32433009FA4B5 /* SceneDelegate.swift */; };
 		F0ECB5E226B32433009FA4B5 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECB5E126B32433009FA4B5 /* ViewController.swift */; };
 		F0ECB5E526B32433009FA4B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ECB5E326B32433009FA4B5 /* Main.storyboard */; };
-		F0ECB5E726B32434009FA4B5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F0ECB5E626B32434009FA4B5 /* Assets.xcassets */; };
 		F0ECB5EA26B32434009FA4B5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F0ECB5E826B32434009FA4B5 /* LaunchScreen.storyboard */; };
 		F0ECB5F526B32434009FA4B5 /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECB5F426B32434009FA4B5 /* WBooksTests.swift */; };
 		F0ECB60026B32434009FA4B5 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECB5FF26B32434009FA4B5 /* WBooksUITests.swift */; };
@@ -47,6 +50,10 @@
 		D40A066932E8196067802000 /* Pods-WBooks.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBooks.debug.xcconfig"; path = "Target Support Files/Pods-WBooks/Pods-WBooks.debug.xcconfig"; sourceTree = "<group>"; };
 		DAD20BD1F34A46B23B237CFF /* Pods_WBooks.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_WBooks.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		E92AB40CB51E4BA78147F61E /* Pods-WBooksTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-WBooksTests.debug.xcconfig"; path = "Target Support Files/Pods-WBooksTests/Pods-WBooksTests.debug.xcconfig"; sourceTree = "<group>"; };
+		F02149A226B864980079295C /* MyCustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCell.swift; sourceTree = "<group>"; };
+		F02149A426B864CC0079295C /* MyCustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MyCustomCell.xib; sourceTree = "<group>"; };
+		F02149A626B86AC70079295C /* ViewController2.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController2.swift; sourceTree = "<group>"; };
+		F02149AC26B880550079295C /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F03B9E0526B818F800B47EB9 /* ConfigDebug.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigDebug.xcconfig; sourceTree = "<group>"; };
 		F03B9E0626B81A3700B47EB9 /* ConfigRelease.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = ConfigRelease.xcconfig; sourceTree = "<group>"; };
 		F0ECB5DA26B32433009FA4B5 /* WBooks.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = WBooks.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -54,7 +61,6 @@
 		F0ECB5DF26B32433009FA4B5 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		F0ECB5E126B32433009FA4B5 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F0ECB5E426B32433009FA4B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		F0ECB5E626B32434009FA4B5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F0ECB5E926B32434009FA4B5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F0ECB5EB26B32434009FA4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F0ECB5F026B32434009FA4B5 /* WBooksTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -151,13 +157,16 @@
 			isa = PBXGroup;
 			children = (
 				F03B9E0426B817CC00B47EB9 /* ConfigureFiles */,
+				F0ECB5E326B32433009FA4B5 /* Main.storyboard */,
+				F0ECB5E126B32433009FA4B5 /* ViewController.swift */,
+				F02149A626B86AC70079295C /* ViewController2.swift */,
+				F02149A226B864980079295C /* MyCustomCell.swift */,
+				F02149A426B864CC0079295C /* MyCustomCell.xib */,
 				F0ECB5DD26B32433009FA4B5 /* AppDelegate.swift */,
 				F0ECB5DF26B32433009FA4B5 /* SceneDelegate.swift */,
-				F0ECB5E126B32433009FA4B5 /* ViewController.swift */,
-				F0ECB5E326B32433009FA4B5 /* Main.storyboard */,
-				F0ECB5E626B32434009FA4B5 /* Assets.xcassets */,
 				F0ECB5E826B32434009FA4B5 /* LaunchScreen.storyboard */,
 				F0ECB5EB26B32434009FA4B5 /* Info.plist */,
+				F02149AC26B880550079295C /* Images.xcassets */,
 			);
 			path = WBooks;
 			sourceTree = "<group>";
@@ -289,7 +298,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0ECB5EA26B32434009FA4B5 /* LaunchScreen.storyboard in Resources */,
-				F0ECB5E726B32434009FA4B5 /* Assets.xcassets in Resources */,
+				F02149AD26B880550079295C /* Images.xcassets in Resources */,
+				F02149A526B864CC0079295C /* MyCustomCell.xib in Resources */,
 				F0ECB5E526B32433009FA4B5 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -418,8 +428,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F02149A726B86AC70079295C /* ViewController2.swift in Sources */,
 				F0ECB5E226B32433009FA4B5 /* ViewController.swift in Sources */,
 				F0ECB5DE26B32433009FA4B5 /* AppDelegate.swift in Sources */,
+				F02149A326B864980079295C /* MyCustomCell.swift in Sources */,
 				F0ECB5E026B32433009FA4B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
