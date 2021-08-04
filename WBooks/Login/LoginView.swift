@@ -8,7 +8,13 @@
 import Foundation
 import UIKit
 
+
+
 final class LoginView: NibView {
         
-    @IBOutlet weak var mainButton: UIButton!
+    @IBOutlet weak var buttonGoogle: UIButton!
+    
+ 
+    
+    
 }

@@ -19,13 +19,19 @@ final class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginView.mainButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
+        loginView.buttonGoogle.backgroundColor = .clear
+        loginView.buttonGoogle.layer.cornerRadius = 15
+        
+        loginView.buttonGoogle.layer.borderWidth = 1.5
+        loginView.buttonGoogle.layer.borderColor = UIColor.white.cgColor
+        
+//        loginView.mainButton.addTarget(self, action: #selector(buttonTapped), for: .touchUpInside)
     }
     
-    @objc func buttonTapped() {
-        let libraryController = UIViewController()
-        libraryController.view.backgroundColor = .blue
-        libraryController.modalPresentationStyle = .fullScreen
-        present(libraryController, animated: true)
-    }
+//    @objc func buttonTapped() {
+//        let libraryController = UIViewController()
+//        libraryController.view.backgroundColor = .blue
+//        libraryController.modalPresentationStyle = .fullScreen
+//        present(libraryController, animated: true)
+//    }
 }
