@@ -55,7 +55,6 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
             cell.lblSecond.text = dict["last_name"]
             cell.layer.cornerRadius = 5
             cell.clipsToBounds = true
-            
             return cell
         }
     
