@@ -28,12 +28,12 @@ final class LoginController: UIViewController {
     }
     
     @objc func buttonClicked() {
-        let controller = UINavigationController(rootViewController: LibraryController())
-        controller.modalPresentationStyle = .fullScreen
-        present(controller, animated: true)
         
-//        let libraryController = LibraryController()
-//        present(UINavigationController(rootViewController: libraryController), animated: true)
-//        navigationController?.pushViewController(libraryController, animated: true)
+        let tabBarVC = TabBarController()
+        tabBarVC.modalPresentationStyle = .fullScreen
+        present(tabBarVC, animated: true)
     }
 }
+
+
+
