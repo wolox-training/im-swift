@@ -15,13 +15,15 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
         view = library
     }
     
+    private let libraryViewModel = LibraryViewModel()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
         // NavigationBar
         configurationNavigationBar()
         
-        // delegares and data source
+        // delegates and data source
         library.tableBooks.delegate = self
         library.tableBooks.dataSource = self
         
@@ -55,7 +57,8 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     // func for tableView
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.usersArray.count
+        
+        return libraryViewModel.numberOfBook
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -77,17 +80,13 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
         
-        let dict = usersArray[indexPath.section]
-        cell.lblFirst.text = dict["first_name"]
-        cell.lblSecond.text = dict["last_name"]
-        cell.layer.cornerRadius = 5
-        cell.clipsToBounds = true
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
+
+        let viewModel = libraryViewModel.getCell(index: indexPath.section)
+        cell.configureCell(with: viewModel)
+        
         return cell
     }
-    
-    // mock data
-    var usersArray : Array = [["first_name": "michael", "last_name": "jackson"], ["first_name" : "bill", "last_name" : "gates"], ["first_name" : "steve", "last_name" : "jobs"], ["first_name" : "mark", "last_name" : "zuckerberg"], ["first_name" : "anthony", "last_name" : "quinn"]]
 }
 

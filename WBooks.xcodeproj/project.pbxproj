@@ -28,6 +28,9 @@
 		F2ED3C8817BFC6E83AC7AD95 /* Pods_WBooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAD679C485AF5B124C27838 /* Pods_WBooksTests.framework */; };
 		FC4B5D2926BD58790065409F /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC4B5D2B26BD58790065409F /* Localizable.strings */; };
 		FC4B5D3026BD5AF10065409F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = FC4B5D3226BD5AF10065409F /* InfoPlist.strings */; };
+		FC4B5D3626BD6DC10065409F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B5D3526BD6DC10065409F /* Book.swift */; };
+		FC4B5D3B26BD9CDD0065409F /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B5D3A26BD9CDD0065409F /* LibraryViewModel.swift */; };
+		FC4B5D3D26BDA3160065409F /* MyCustomCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B5D3C26BDA3160065409F /* MyCustomCellViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -86,6 +89,9 @@
 		FC4B5D2D26BD59CA0065409F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/Localizable.strings; sourceTree = "<group>"; };
 		FC4B5D3126BD5AF10065409F /* es */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = es; path = es.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		FC4B5D3326BD5AF60065409F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		FC4B5D3526BD6DC10065409F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
+		FC4B5D3A26BD9CDD0065409F /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
+		FC4B5D3C26BDA3160065409F /* MyCustomCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyCustomCellViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,11 +175,11 @@
 		F0D3363026BAFE7800B11648 /* Library */ = {
 			isa = PBXGroup;
 			children = (
-				F0D3362526BAAFC500B11648 /* LibraryView.swift */,
+				FC4B5D3926BD9C5F0065409F /* BookCell */,
 				F0D3362726BAAFF700B11648 /* LibraryView.xib */,
+				F0D3362526BAAFC500B11648 /* LibraryView.swift */,
 				F0D3362926BAB04900B11648 /* LibraryController.swift */,
-				F0D3362B26BABEC900B11648 /* MyCustomCell.swift */,
-				F0D3362D26BABEF200B11648 /* MyCustomCell.xib */,
+				FC4B5D3A26BD9CDD0065409F /* LibraryViewModel.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -211,6 +217,7 @@
 		F0ECB5DC26B32433009FA4B5 /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
+				FC4B5D3426BD6DA30065409F /* Models */,
 				6554490626B99890001D70E1 /* Shared */,
 				655448FF26B984B5001D70E1 /* Login */,
 				F0D3363026BAFE7800B11648 /* Library */,
@@ -243,6 +250,24 @@
 				F0ECB60126B32434009FA4B5 /* Info.plist */,
 			);
 			path = WBooksUITests;
+			sourceTree = "<group>";
+		};
+		FC4B5D3426BD6DA30065409F /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				FC4B5D3526BD6DC10065409F /* Book.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		FC4B5D3926BD9C5F0065409F /* BookCell */ = {
+			isa = PBXGroup;
+			children = (
+				F0D3362D26BABEF200B11648 /* MyCustomCell.xib */,
+				F0D3362B26BABEC900B11648 /* MyCustomCell.swift */,
+				FC4B5D3C26BDA3160065409F /* MyCustomCellViewModel.swift */,
+			);
+			path = BookCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -488,6 +513,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC4B5D3D26BDA3160065409F /* MyCustomCellViewModel.swift in Sources */,
 				F0D3362C26BABEC900B11648 /* MyCustomCell.swift in Sources */,
 				655448FE26B9849A001D70E1 /* NibView.swift in Sources */,
 				F0D3362626BAAFC500B11648 /* LibraryView.swift in Sources */,
@@ -496,6 +522,8 @@
 				F0D3362A26BAB04900B11648 /* LibraryController.swift in Sources */,
 				F0ECB5DE26B32433009FA4B5 /* AppDelegate.swift in Sources */,
 				6554490126B984C3001D70E1 /* LoginView.swift in Sources */,
+				FC4B5D3626BD6DC10065409F /* Book.swift in Sources */,
+				FC4B5D3B26BD9CDD0065409F /* LibraryViewModel.swift in Sources */,
 				F0ECB5E026B32433009FA4B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

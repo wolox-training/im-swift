@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="mMO-xX-a8a" customClass="MyCustomCell" customModule="WBooks" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NJt-pg-yjF">
+                    <rect key="frame" x="0.0" y="0.0" width="414" height="90"/>
+                    <subviews>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z80-Xn-p1m">
+                            <rect key="frame" x="89" y="15" width="42" height="21"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="9Gm-vN-V3X">
+                            <rect key="frame" x="89" y="38" width="37.333333333333343" height="18"/>
+                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                            <nil key="textColor"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="img_book2" translatesAutoresizingMaskIntoConstraints="NO" id="WZY-ah-sa8">
+                            <rect key="frame" x="30" y="15" width="39" height="60"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="60" id="MLr-HB-qSI"/>
+                                <constraint firstAttribute="width" constant="39" id="YzZ-4J-ZMC"/>
+                            </constraints>
+                        </imageView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="9Gm-vN-V3X" firstAttribute="top" secondItem="NJt-pg-yjF" secondAttribute="top" constant="38" id="AVM-wN-Lsq"/>
+                        <constraint firstItem="Z80-Xn-p1m" firstAttribute="top" secondItem="NJt-pg-yjF" secondAttribute="top" constant="15" id="apG-Mo-qTv"/>
+                        <constraint firstItem="9Gm-vN-V3X" firstAttribute="leading" secondItem="NJt-pg-yjF" secondAttribute="leading" constant="89" id="kvV-z0-xJo"/>
+                        <constraint firstItem="WZY-ah-sa8" firstAttribute="leading" secondItem="NJt-pg-yjF" secondAttribute="leading" constant="30" id="tf6-zd-dt1"/>
+                        <constraint firstItem="WZY-ah-sa8" firstAttribute="top" secondItem="NJt-pg-yjF" secondAttribute="top" constant="15" id="uJH-uU-55z"/>
+                        <constraint firstItem="Z80-Xn-p1m" firstAttribute="leading" secondItem="NJt-pg-yjF" secondAttribute="leading" constant="89" id="zna-Aa-1LR"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstAttribute="trailing" secondItem="NJt-pg-yjF" secondAttribute="trailing" id="JU5-DO-hf4"/>
+                <constraint firstItem="NJt-pg-yjF" firstAttribute="leading" secondItem="mMO-xX-a8a" secondAttribute="leading" id="Ouz-LF-zRh"/>
+                <constraint firstItem="NJt-pg-yjF" firstAttribute="top" secondItem="mMO-xX-a8a" secondAttribute="top" id="buJ-Pg-hg5"/>
+                <constraint firstAttribute="bottom" secondItem="NJt-pg-yjF" secondAttribute="bottom" id="svw-bS-Tr8"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="lblFirst" destination="Z80-Xn-p1m" id="S6G-CG-Uxx"/>
+                <outlet property="lblSecond" destination="9Gm-vN-V3X" id="uoZ-J7-3VC"/>
+            </connections>
+            <point key="canvasLocation" x="236.23188405797103" y="84.782608695652186"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="img_book2" width="41" height="60"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
