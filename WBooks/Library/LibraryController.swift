@@ -46,7 +46,8 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         //navigationController?.title = "LIBRARY"
         
-        title = "LIBRARY"
+        //title = "LIBRARY"
+        title = NSLocalizedString("TITLE_NAVBAR", comment: "")
         tabBarItem.title = "Library"
         
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
