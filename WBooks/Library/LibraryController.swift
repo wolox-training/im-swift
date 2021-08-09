@@ -15,6 +15,7 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
         view = library
     }
     
+    //let api = BookRepository()
     private let libraryViewModel = LibraryViewModel()
     
     override func viewDidLoad() {
@@ -58,7 +59,8 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     // func for tableView
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return libraryViewModel.numberOfBook
+//        return libraryViewModel.numberOfBook
+        return 10
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -82,9 +84,12 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
         let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
-
-        let viewModel = libraryViewModel.getCell(index: indexPath.section)
-        cell.configureCell(with: viewModel)
+        
+        libraryViewModel.getBookRepo()
+        
+        
+        //let viewModel = libraryViewModel.getCell(index: indexPath.section)
+//        cell.configureCell(with: viewModel)
         
         return cell
     }
