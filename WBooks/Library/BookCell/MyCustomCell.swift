@@ -14,10 +14,16 @@ class MyCustomCell: UITableViewCell {
     
     override func awakeFromNib() {
         super.awakeFromNib()
+        layer.cornerRadius = 5
+        clipsToBounds = true
     }
-
+    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
-
+    
+    func configureCell(with viewModel: MyCustomCellViewModel) {
+        lblFirst.text = viewModel.title
+        lblSecond.text = viewModel.author
+    }
 }
