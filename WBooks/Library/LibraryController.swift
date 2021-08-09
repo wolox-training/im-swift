@@ -18,46 +18,75 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        // NavigationBar
+        configurationNavigationBar()
+        
+        // delegares and data source
         library.tableBooks.delegate = self
         library.tableBooks.dataSource = self
         
+        // cell .xib
         let nib = UINib.init(nibName: "MyCustomCell", bundle: nil)
-        self.library.tableBooks.register(nib, forCellReuseIdentifier: "MyCustomCell")
+        library.tableBooks.register(nib, forCellReuseIdentifier: "MyCustomCell")
     }
     
-    func numberOfSections(in tableView: UITableView) -> Int {
-            return self.usersArray.count
-        }
+    // func for the NavigationBar config
+    func configurationNavigationBar() {
         
-        func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-            return 1
-        }
+        navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Navigation baric_search"), style: .done, target: self, action: nil)
         
-     func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
-            return 10
-        }
+        navigationItem.leftBarButtonItem = UIBarButtonItem(image: UIImage(named: "Navigation baric_notifications"), style: .done, target: self, action: nil)
         
-     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-            let headerView = UIView()
-            headerView.backgroundColor = UIColor.clear
-            return headerView
-        }
+        let imageBackground = UIImage(named: "bc_nav bar")
+        navigationController?.navigationBar.setBackgroundImage(imageBackground, for: .default)
         
-        func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-            return 90
-        }
+        self.navigationItem.rightBarButtonItem?.tintColor = UIColor.white
         
-        func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-            let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
-            
-            let dict = usersArray[indexPath.section]
-            cell.lblFirst.text = dict["first_name"]
-            cell.lblSecond.text = dict["last_name"]
-            cell.layer.cornerRadius = 5
-            cell.clipsToBounds = true
-            return cell
-        }
+        self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
+        
+        //navigationController?.title = "LIBRARY"
+        
+        title = "LIBRARY"
+        tabBarItem.title = "Library"
+        
+        navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+    }
     
+    // func for tableView
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.usersArray.count
+    }
+    
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        return 1
+    }
+    
+    func tableView(_ tableView: UITableView, heightForHeaderInSection section: Int) -> CGFloat {
+        return 10
+    }
+    
+    func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+        let headerView = UIView()
+        headerView.backgroundColor = UIColor.clear
+        return headerView
+    }
+    
+    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+        return 90
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
+        
+        let dict = usersArray[indexPath.section]
+        cell.lblFirst.text = dict["first_name"]
+        cell.lblSecond.text = dict["last_name"]
+        cell.layer.cornerRadius = 5
+        cell.clipsToBounds = true
+        return cell
+    }
+    
+    // mock data
     var usersArray : Array = [["first_name": "michael", "last_name": "jackson"], ["first_name" : "bill", "last_name" : "gates"], ["first_name" : "steve", "last_name" : "jobs"], ["first_name" : "mark", "last_name" : "zuckerberg"], ["first_name" : "anthony", "last_name" : "quinn"]]
 }
 
