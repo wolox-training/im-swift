@@ -19,11 +19,10 @@ final class LoginController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        loginView.buttonGoogle.backgroundColor = .clear
-        loginView.buttonGoogle.layer.cornerRadius = 15
-        loginView.buttonGoogle.layer.borderWidth = 1.5
-        loginView.buttonGoogle.layer.borderColor = UIColor.white.cgColor
-        
+        setupGoogleButton()
+    }
+    
+    private func setupGoogleButton() {
         loginView.buttonGoogle.addTarget(self, action: #selector(buttonClicked), for: .touchUpInside)
     }
     

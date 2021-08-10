@@ -9,6 +9,14 @@ import Foundation
 import UIKit
 
 final class LoginView: NibView {
-        
-    @IBOutlet weak var buttonGoogle: UIButton!
+    
+    @IBOutlet weak var buttonGoogle: UIButton! {
+        didSet{
+            buttonGoogle.backgroundColor = .clear
+            buttonGoogle.layer.cornerRadius = 15
+            buttonGoogle.layer.borderWidth = 1.5
+            buttonGoogle.layer.borderColor = UIColor.white.cgColor
+        }
+    }
+    
 }
