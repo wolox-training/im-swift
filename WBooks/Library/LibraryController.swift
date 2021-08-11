@@ -28,11 +28,15 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
         library.tableBooks.dataSource = self
         
         // cell .xib
-        let nib = UINib.init(nibName: "MyCustomCell", bundle: nil)
-        library.tableBooks.register(nib, forCellReuseIdentifier: "MyCustomCell")
+        let nib = UINib(nibName: "LibraryCell", bundle: nil)
+        library.tableBooks.register(nib, forCellReuseIdentifier: "LibraryCell")
+        
+        libraryViewModel.getBookRepo() { books in
+            self.library.tableBooks.reloadData()
+        }
     }
     
-    // func for the NavigationBar config
+    // MARK: -func for the NavigationBar config
     func configurationNavigationBar() {
         
         navigationItem.rightBarButtonItem = UIBarButtonItem(image: UIImage(named: "Navigation baric_search"), style: .done, target: self, action: nil)
@@ -46,19 +50,16 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
         
         self.navigationItem.leftBarButtonItem?.tintColor = UIColor.white
         
-        //navigationController?.title = "LIBRARY"
-        
-        //title = "LIBRARY"
-        title = NSLocalizedString("TITLE_NAVBAR", comment: "")
+        title = NSLocalizedString("TITLE_NAVBAR", comment: "Title at the top of the Library view")
         tabBarItem.title = "Library"
         
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
     }
     
-    // func for tableView
+    // MARK: -func for tableView
     func numberOfSections(in tableView: UITableView) -> Int {
         
-        return libraryViewModel.numberOfBook
+        return libraryViewModel.numberOfBooks()
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
@@ -81,12 +82,14 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         
-        let cell = tableView.dequeueReusableCell(withIdentifier: "MyCustomCell", for: indexPath) as! MyCustomCell
-
+        
+        let cell = tableView.dequeueReusableCell(withIdentifier: "LibraryCell", for: indexPath) as! LibraryCell
+        
         let viewModel = libraryViewModel.getCell(index: indexPath.section)
         cell.configureCell(with: viewModel)
         
         return cell
+        
     }
 }
 

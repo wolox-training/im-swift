@@ -7,7 +7,7 @@
 
 import Foundation
 
-struct MyCustomCellViewModel {
+struct LibraryCellViewModel {
     
     let book: Book
     
@@ -18,5 +18,11 @@ struct MyCustomCellViewModel {
     var author: String {
         return book.author
     }
+    
+    var image: String {
+        return book.image
+    }
+    
+    
 }
 

@@ -47,29 +47,6 @@ class TabBarController: UITabBarController {
         
         let navRentals = UINavigationController(rootViewController: rentals)
         
-        
         viewControllers = [navLibrary, navWishList, navSuggest, navRentals]
     }
 }
-
-class WishListController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .lightGray
-    }
-}
-
-class SuggestController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .purple
-    }
-}
-
-class RentalsController: UIViewController {
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        view.backgroundColor = .red
-    }
-}
-

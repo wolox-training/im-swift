@@ -9,22 +9,31 @@ import Foundation
 
 class LibraryViewModel {
     
-    //    var myCustomCellViewModel = MyCustomCellViewModel(book: <#Book#>)
+    var books = [Book]()
+    let api = BookRepository()
     
-    private let books = [
-        Book(title: "Book1", author: "Author1"),
-        Book(title: "Book2", author: "Author2"),
-        Book(title: "Book3", author: "Author3"),
-        Book(title: "Book4", author: "Author4"),
-        Book(title: "Book5", author: "Author5"),
-    ]
     
-    var numberOfBook: Int {
-        return books.count
+    func getCell(index: Int) -> LibraryCellViewModel {
+        let myCustomCellViewModel = LibraryCellViewModel(book: books[index])
+        return myCustomCellViewModel
     }
     
-    func getCell(index: Int) -> MyCustomCellViewModel {
-        let myCustomCellViewModel = MyCustomCellViewModel(book: books[index])
-        return myCustomCellViewModel
+    func getBookRepo(action: @escaping ([Book]) -> () ) {
+        
+        let onSuccess = { (books: [Book]) in
+            print(books)
+            self.books = books
+            action(books)
+        }
+        
+        let onError = { error in
+            print(error)
+        }
+        
+        api.fetchBooks(onSuccess: onSuccess, onError: onError)
+    }
+    
+    func numberOfBooks() -> Int {
+        return books.count
     }
 }
