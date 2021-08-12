@@ -11,6 +11,9 @@ import UIKit
 
 final class BookDetailView: NibView {
     
+    @IBOutlet weak var tableComments: UITableView!
+    
+    
     @IBOutlet weak var imageBook: UIImageView!
     @IBOutlet weak var titleBook: UILabel!
     @IBOutlet weak var yearBook: UILabel!
@@ -41,6 +44,5 @@ final class BookDetailView: NibView {
     }
     
     override func awakeFromNib() {
-        //
     }
 }

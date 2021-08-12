@@ -15,5 +15,4 @@ public struct Book: Codable {
     let year: String
     let image: String
     let status: String
-    
 }

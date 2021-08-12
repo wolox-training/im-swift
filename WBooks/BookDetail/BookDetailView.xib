@@ -17,6 +17,7 @@
                 <outlet property="genreBook" destination="2kL-6r-oYT" id="9gq-OS-RaQ"/>
                 <outlet property="imageBook" destination="DSN-YK-rar" id="yWc-2e-7ql"/>
                 <outlet property="statusBook" destination="B3n-sA-bZv" id="rd3-PZ-Ff7"/>
+                <outlet property="tableComments" destination="A6S-33-cn4" id="oYX-Wh-QgA"/>
                 <outlet property="titleBook" destination="hMP-an-gWs" id="STF-WZ-JfC"/>
                 <outlet property="yearBook" destination="SMe-5w-B7X" id="BGr-TZ-VlO"/>
             </connections>
@@ -104,20 +105,47 @@
                     </constraints>
                     <directionalEdgeInsets key="directionalLayoutMargins" top="12" leading="30" bottom="21" trailing="30"/>
                 </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="sap-Bh-0oH">
+                    <rect key="frame" x="20" y="487" width="374" height="375"/>
+                    <subviews>
+                        <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="A6S-33-cn4">
+                            <rect key="frame" x="0.0" y="0.0" width="374" height="375"/>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <connections>
+                                <outlet property="dataSource" destination="sap-Bh-0oH" id="3Zx-GB-ydH"/>
+                                <outlet property="delegate" destination="sap-Bh-0oH" id="EXH-TZ-HdS"/>
+                            </connections>
+                        </tableView>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="A6S-33-cn4" firstAttribute="leading" secondItem="sap-Bh-0oH" secondAttribute="leading" id="9Az-kE-LdV"/>
+                        <constraint firstItem="A6S-33-cn4" firstAttribute="top" secondItem="sap-Bh-0oH" secondAttribute="top" id="HZY-a0-iL1"/>
+                        <constraint firstAttribute="bottom" secondItem="A6S-33-cn4" secondAttribute="bottom" id="paj-dO-1WC"/>
+                        <constraint firstAttribute="trailing" secondItem="A6S-33-cn4" secondAttribute="trailing" id="r2c-XG-iex"/>
+                    </constraints>
+                </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="c6C-9z-5EY"/>
             <color key="backgroundColor" red="0.91764705882352937" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
+                <constraint firstItem="sap-Bh-0oH" firstAttribute="leading" secondItem="c6C-9z-5EY" secondAttribute="leading" constant="20" id="2dH-l3-HCG"/>
                 <constraint firstItem="9Ho-ce-6nJ" firstAttribute="top" secondItem="RwY-jA-2jh" secondAttribute="top" constant="122" id="44Q-Zi-cPU"/>
+                <constraint firstItem="sap-Bh-0oH" firstAttribute="top" secondItem="9Ho-ce-6nJ" secondAttribute="bottom" constant="10" id="Bzm-4a-EI1"/>
                 <constraint firstItem="9Ho-ce-6nJ" firstAttribute="leading" secondItem="c6C-9z-5EY" secondAttribute="leading" constant="20" id="Cls-YN-uf9"/>
+                <constraint firstItem="c6C-9z-5EY" firstAttribute="bottom" secondItem="sap-Bh-0oH" secondAttribute="bottom" id="WI9-li-BaV"/>
                 <constraint firstItem="c6C-9z-5EY" firstAttribute="trailing" secondItem="9Ho-ce-6nJ" secondAttribute="trailing" constant="20" id="dRc-93-unm"/>
+                <constraint firstItem="c6C-9z-5EY" firstAttribute="trailing" secondItem="sap-Bh-0oH" secondAttribute="trailing" constant="20" id="kZT-51-CoX"/>
             </constraints>
             <point key="canvasLocation" x="231.8840579710145" y="155.35714285714286"/>
         </view>
     </objects>
     <resources>
         <image name="bc_inicio" width="375" height="667"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
         <systemColor name="systemBlueColor">
             <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>

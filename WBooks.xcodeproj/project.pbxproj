@@ -40,6 +40,12 @@
 		FC66C75326C406A800346394 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75226C406A800346394 /* Utilities.swift */; };
 		FC66C75626C4420F00346394 /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75526C4420F00346394 /* BookDetailController.swift */; };
 		FC66C75726C4420F00346394 /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75426C4420F00346394 /* BookDetailViewModel.swift */; };
+		FC66C75A26C55DE600346394 /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC66C75926C55DE600346394 /* CommentCell.xib */; };
+		FC66C75C26C55E6D00346394 /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75B26C55E6D00346394 /* CommentCell.swift */; };
+		FC66C75E26C561E800346394 /* CommentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75D26C561E800346394 /* CommentCellViewModel.swift */; };
+		FC66C76026C56D7500346394 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75F26C56D7500346394 /* Comment.swift */; };
+		FC66C76226C56DFD00346394 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C76126C56DFD00346394 /* CommentRepository.swift */; };
+		FC66C76426C592AB00346394 /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C76326C592AB00346394 /* CommentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,6 +116,12 @@
 		FC66C75226C406A800346394 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FC66C75426C4420F00346394 /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
 		FC66C75526C4420F00346394 /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
+		FC66C75926C55DE600346394 /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
+		FC66C75B26C55E6D00346394 /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
+		FC66C75D26C561E800346394 /* CommentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellViewModel.swift; sourceTree = "<group>"; };
+		FC66C75F26C56D7500346394 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
+		FC66C76126C56DFD00346394 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
+		FC66C76326C592AB00346394 /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -196,8 +208,8 @@
 				FC4B5D3926BD9C5F0065409F /* BookCell */,
 				F0D3362726BAAFF700B11648 /* LibraryView.xib */,
 				F0D3362526BAAFC500B11648 /* LibraryView.swift */,
-				F0D3362926BAB04900B11648 /* LibraryController.swift */,
 				FC4B5D3A26BD9CDD0065409F /* LibraryViewModel.swift */,
+				F0D3362926BAB04900B11648 /* LibraryController.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -280,6 +292,7 @@
 			isa = PBXGroup;
 			children = (
 				FC20E95826C159A300F4E302 /* BookRepository.swift */,
+				FC66C76126C56DFD00346394 /* CommentRepository.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -288,6 +301,7 @@
 			isa = PBXGroup;
 			children = (
 				FC4B5D3526BD6DC10065409F /* Book.swift */,
+				FC66C75F26C56D7500346394 /* Comment.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -305,9 +319,11 @@
 		FC66C74826C2D21D00346394 /* BookDetail */ = {
 			isa = PBXGroup;
 			children = (
+				FC66C75826C55DBD00346394 /* CommentCell */,
 				FC66C74926C2D27400346394 /* BookDetailView.xib */,
 				FC66C74B26C2D2BD00346394 /* BookDatailView.swift */,
 				FC66C75426C4420F00346394 /* BookDetailViewModel.swift */,
+				FC66C76326C592AB00346394 /* CommentViewModel.swift */,
 				FC66C75526C4420F00346394 /* BookDetailController.swift */,
 			);
 			path = BookDetail;
@@ -319,6 +335,16 @@
 				FC66C75226C406A800346394 /* Utilities.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		FC66C75826C55DBD00346394 /* CommentCell */ = {
+			isa = PBXGroup;
+			children = (
+				FC66C75926C55DE600346394 /* CommentCell.xib */,
+				FC66C75B26C55E6D00346394 /* CommentCell.swift */,
+				FC66C75D26C561E800346394 /* CommentCellViewModel.swift */,
+			);
+			path = CommentCell;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -436,6 +462,7 @@
 				F0ECB5E726B32434009FA4B5 /* Assets.xcassets in Resources */,
 				FC66C74A26C2D27400346394 /* BookDetailView.xib in Resources */,
 				6554490326B984CC001D70E1 /* LoginView.xib in Resources */,
+				FC66C75A26C55DE600346394 /* CommentCell.xib in Resources */,
 				F0D3362E26BABEF200B11648 /* LibraryCell.xib in Resources */,
 				F0D3362826BAAFF700B11648 /* LibraryView.xib in Resources */,
 			);
@@ -566,9 +593,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC4B5D3D26BDA3160065409F /* LibraryCellViewModel.swift in Sources */,
+				FC66C76026C56D7500346394 /* Comment.swift in Sources */,
 				F0D3362C26BABEC900B11648 /* LibraryCell.swift in Sources */,
+				FC66C76426C592AB00346394 /* CommentViewModel.swift in Sources */,
 				FC66C74C26C2D2BD00346394 /* BookDatailView.swift in Sources */,
 				655448FE26B9849A001D70E1 /* NibView.swift in Sources */,
+				FC66C76226C56DFD00346394 /* CommentRepository.swift in Sources */,
 				F0D3362626BAAFC500B11648 /* LibraryView.swift in Sources */,
 				F0D3363226BC38FF00B11648 /* TabBarController.swift in Sources */,
 				6554490526B984D7001D70E1 /* LoginController.swift in Sources */,
@@ -585,6 +615,8 @@
 				FC66C75626C4420F00346394 /* BookDetailController.swift in Sources */,
 				FC66C75326C406A800346394 /* Utilities.swift in Sources */,
 				F0ECB5E026B32433009FA4B5 /* SceneDelegate.swift in Sources */,
+				FC66C75E26C561E800346394 /* CommentCellViewModel.swift in Sources */,
+				FC66C75C26C55E6D00346394 /* CommentCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

@@ -11,6 +11,10 @@ struct BookDetailViewModel {
     
     var book: Book
     
+    var id: Int {
+        return book.id
+    }
+    
     var title: String {
         return book.title
     }
@@ -35,3 +39,6 @@ struct BookDetailViewModel {
         return book.genre
     }
 }
+
+
+
