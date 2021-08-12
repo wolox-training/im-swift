@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookDetailView" customModule="WBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="authorBook" destination="S4Z-hS-VP6" id="JYX-L0-5So"/>
+                <outlet property="buttonAddtoWishList" destination="C0F-Hw-8ga" id="9Ti-or-pSa"/>
+                <outlet property="buttonRent" destination="Dwg-oX-SRt" id="XIX-0B-3E8"/>
+                <outlet property="firstStack" destination="9Ho-ce-6nJ" id="9sD-ho-mHT"/>
+                <outlet property="genreBook" destination="2kL-6r-oYT" id="9gq-OS-RaQ"/>
+                <outlet property="imageBook" destination="DSN-YK-rar" id="yWc-2e-7ql"/>
+                <outlet property="statusBook" destination="B3n-sA-bZv" id="rd3-PZ-Ff7"/>
+                <outlet property="titleBook" destination="hMP-an-gWs" id="STF-WZ-JfC"/>
+                <outlet property="yearBook" destination="SMe-5w-B7X" id="BGr-TZ-VlO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="RwY-jA-2jh">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="48" translatesAutoresizingMaskIntoConstraints="NO" id="9Ho-ce-6nJ">
+                    <rect key="frame" x="20" y="122" width="374" height="355"/>
+                    <subviews>
+                        <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="22" translatesAutoresizingMaskIntoConstraints="NO" id="2pd-E5-vTp">
+                            <rect key="frame" x="30" y="12" width="314" height="137"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bc_inicio" translatesAutoresizingMaskIntoConstraints="NO" id="DSN-YK-rar">
+                                    <rect key="frame" x="0.0" y="0.0" width="100" height="137"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="100" id="chl-1m-s7n"/>
+                                    </constraints>
+                                </imageView>
+                                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="9" translatesAutoresizingMaskIntoConstraints="NO" id="HEQ-k4-b3x">
+                                    <rect key="frame" x="122" y="0.0" width="192" height="137"/>
+                                    <subviews>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Be Creative" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="hMP-an-gWs">
+                                            <rect key="frame" x="0.0" y="0.0" width="192" height="29"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="24"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Not Available" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="B3n-sA-bZv">
+                                            <rect key="frame" x="0.0" y="38" width="192" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <color key="textColor" systemColor="systemRedColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Martin Richards" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="S4Z-hS-VP6">
+                                            <rect key="frame" x="0.0" y="65" width="192" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2016" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="SMe-5w-B7X">
+                                            <rect key="frame" x="0.0" y="92" width="192" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Art" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2kL-6r-oYT">
+                                            <rect key="frame" x="0.0" y="119" width="192" height="18"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                            <nil key="textColor"/>
+                                            <nil key="highlightedColor"/>
+                                        </label>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="DSN-YK-rar" secondAttribute="bottom" id="kw7-2E-Rpz"/>
+                            </constraints>
+                        </stackView>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="3AO-ym-fRm">
+                            <rect key="frame" x="30" y="197" width="314" height="137"/>
+                            <subviews>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C0F-Hw-8ga">
+                                    <rect key="frame" x="0.0" y="0.0" width="314" height="61"/>
+                                    <state key="normal" title="ADD TO WISHLIST">
+                                        <color key="titleColor" systemColor="systemBlueColor"/>
+                                    </state>
+                                </button>
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Dwg-oX-SRt">
+                                    <rect key="frame" x="0.0" y="76" width="314" height="61"/>
+                                    <state key="normal" title="RENT">
+                                        <color key="titleColor" systemColor="systemBlueColor"/>
+                                    </state>
+                                </button>
+                            </subviews>
+                            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        </stackView>
+                    </subviews>
+                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="355" id="hMI-VT-LCS"/>
+                    </constraints>
+                    <directionalEdgeInsets key="directionalLayoutMargins" top="12" leading="30" bottom="21" trailing="30"/>
+                </stackView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="c6C-9z-5EY"/>
+            <color key="backgroundColor" red="0.91764705882352937" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color key="tintColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="9Ho-ce-6nJ" firstAttribute="top" secondItem="RwY-jA-2jh" secondAttribute="top" constant="122" id="44Q-Zi-cPU"/>
+                <constraint firstItem="9Ho-ce-6nJ" firstAttribute="leading" secondItem="c6C-9z-5EY" secondAttribute="leading" constant="20" id="Cls-YN-uf9"/>
+                <constraint firstItem="c6C-9z-5EY" firstAttribute="trailing" secondItem="9Ho-ce-6nJ" secondAttribute="trailing" constant="20" id="dRc-93-unm"/>
+            </constraints>
+            <point key="canvasLocation" x="231.8840579710145" y="155.35714285714286"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="bc_inicio" width="375" height="667"/>
+        <systemColor name="systemBlueColor">
+            <color red="0.0" green="0.47843137254901963" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+    </resources>
+</document>

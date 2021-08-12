@@ -35,6 +35,11 @@
 		FC66C74326C2B53400346394 /* WishListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C74226C2B53400346394 /* WishListController.swift */; };
 		FC66C74526C2B66F00346394 /* SuggestController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C74426C2B66F00346394 /* SuggestController.swift */; };
 		FC66C74726C2B6D100346394 /* RentalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C74626C2B6D100346394 /* RentalController.swift */; };
+		FC66C74A26C2D27400346394 /* BookDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC66C74926C2D27400346394 /* BookDetailView.xib */; };
+		FC66C74C26C2D2BD00346394 /* BookDatailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C74B26C2D2BD00346394 /* BookDatailView.swift */; };
+		FC66C75326C406A800346394 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75226C406A800346394 /* Utilities.swift */; };
+		FC66C75626C4420F00346394 /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75526C4420F00346394 /* BookDetailController.swift */; };
+		FC66C75726C4420F00346394 /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75426C4420F00346394 /* BookDetailViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -100,6 +105,11 @@
 		FC66C74226C2B53400346394 /* WishListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
 		FC66C74426C2B66F00346394 /* SuggestController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SuggestController.swift; sourceTree = "<group>"; };
 		FC66C74626C2B6D100346394 /* RentalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalController.swift; sourceTree = "<group>"; };
+		FC66C74926C2D27400346394 /* BookDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailView.xib; sourceTree = "<group>"; };
+		FC66C74B26C2D2BD00346394 /* BookDatailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDatailView.swift; sourceTree = "<group>"; };
+		FC66C75226C406A800346394 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
+		FC66C75426C4420F00346394 /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
+		FC66C75526C4420F00346394 /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -228,11 +238,13 @@
 		F0ECB5DC26B32433009FA4B5 /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
+				FC66C75126C4062200346394 /* Utilities */,
 				FC20E95726C1597200F4E302 /* Repository */,
 				FC4B5D3426BD6DA30065409F /* Models */,
 				6554490626B99890001D70E1 /* Shared */,
 				655448FF26B984B5001D70E1 /* Login */,
 				F0D3363026BAFE7800B11648 /* Library */,
+				FC66C74826C2D21D00346394 /* BookDetail */,
 				F0D3363326BC693300B11648 /* TabBar */,
 				F03B9E0426B817CC00B47EB9 /* ConfigureFiles */,
 				F0ECB5DD26B32433009FA4B5 /* AppDelegate.swift */,
@@ -288,6 +300,25 @@
 				FC4B5D3C26BDA3160065409F /* LibraryCellViewModel.swift */,
 			);
 			path = BookCell;
+			sourceTree = "<group>";
+		};
+		FC66C74826C2D21D00346394 /* BookDetail */ = {
+			isa = PBXGroup;
+			children = (
+				FC66C74926C2D27400346394 /* BookDetailView.xib */,
+				FC66C74B26C2D2BD00346394 /* BookDatailView.swift */,
+				FC66C75426C4420F00346394 /* BookDetailViewModel.swift */,
+				FC66C75526C4420F00346394 /* BookDetailController.swift */,
+			);
+			path = BookDetail;
+			sourceTree = "<group>";
+		};
+		FC66C75126C4062200346394 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				FC66C75226C406A800346394 /* Utilities.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -403,6 +434,7 @@
 				FC4B5D3026BD5AF10065409F /* InfoPlist.strings in Resources */,
 				FC4B5D2926BD58790065409F /* Localizable.strings in Resources */,
 				F0ECB5E726B32434009FA4B5 /* Assets.xcassets in Resources */,
+				FC66C74A26C2D27400346394 /* BookDetailView.xib in Resources */,
 				6554490326B984CC001D70E1 /* LoginView.xib in Resources */,
 				F0D3362E26BABEF200B11648 /* LibraryCell.xib in Resources */,
 				F0D3362826BAAFF700B11648 /* LibraryView.xib in Resources */,
@@ -535,11 +567,13 @@
 			files = (
 				FC4B5D3D26BDA3160065409F /* LibraryCellViewModel.swift in Sources */,
 				F0D3362C26BABEC900B11648 /* LibraryCell.swift in Sources */,
+				FC66C74C26C2D2BD00346394 /* BookDatailView.swift in Sources */,
 				655448FE26B9849A001D70E1 /* NibView.swift in Sources */,
 				F0D3362626BAAFC500B11648 /* LibraryView.swift in Sources */,
 				F0D3363226BC38FF00B11648 /* TabBarController.swift in Sources */,
 				6554490526B984D7001D70E1 /* LoginController.swift in Sources */,
 				F0D3362A26BAB04900B11648 /* LibraryController.swift in Sources */,
+				FC66C75726C4420F00346394 /* BookDetailViewModel.swift in Sources */,
 				FC66C74326C2B53400346394 /* WishListController.swift in Sources */,
 				FC20E95926C159A300F4E302 /* BookRepository.swift in Sources */,
 				F0ECB5DE26B32433009FA4B5 /* AppDelegate.swift in Sources */,
@@ -548,6 +582,8 @@
 				FC66C74526C2B66F00346394 /* SuggestController.swift in Sources */,
 				FC4B5D3626BD6DC10065409F /* Book.swift in Sources */,
 				FC4B5D3B26BD9CDD0065409F /* LibraryViewModel.swift in Sources */,
+				FC66C75626C4420F00346394 /* BookDetailController.swift in Sources */,
+				FC66C75326C406A800346394 /* Utilities.swift in Sources */,
 				F0ECB5E026B32433009FA4B5 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
