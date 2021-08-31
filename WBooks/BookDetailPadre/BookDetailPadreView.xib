@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18122"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookDetailPadreView" customModule="WBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="viewCommentsContainer" destination="03g-cN-471" id="nyz-Ow-uMR"/>
+                <outlet property="viewDetailContainer" destination="Hot-VI-SLr" id="7y0-kI-VNT"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="KES-GH-Bl8">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Hot-VI-SLr">
+                    <rect key="frame" x="20" y="122" width="374" height="355"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="355" id="h6r-Gs-LAq"/>
+                    </constraints>
+                </view>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="03g-cN-471">
+                    <rect key="frame" x="20" y="487" width="374" height="375"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="375" id="5Zz-IR-bKi"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" red="0.91764705882352937" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <constraints>
+                <constraint firstItem="Hot-VI-SLr" firstAttribute="top" secondItem="KES-GH-Bl8" secondAttribute="top" constant="122" id="7va-1k-b8z"/>
+                <constraint firstAttribute="trailing" secondItem="03g-cN-471" secondAttribute="trailing" constant="20" id="FMK-po-80r"/>
+                <constraint firstItem="03g-cN-471" firstAttribute="leading" secondItem="KES-GH-Bl8" secondAttribute="leading" constant="20" id="ebF-Oz-ifp"/>
+                <constraint firstItem="Hot-VI-SLr" firstAttribute="leading" secondItem="KES-GH-Bl8" secondAttribute="leading" constant="20" id="jkI-Pk-D74"/>
+                <constraint firstItem="03g-cN-471" firstAttribute="top" secondItem="Hot-VI-SLr" secondAttribute="bottom" constant="10" id="ns8-qn-hIO"/>
+                <constraint firstAttribute="trailing" secondItem="Hot-VI-SLr" secondAttribute="trailing" constant="20" id="p6N-4A-eL7"/>
+            </constraints>
+            <point key="canvasLocation" x="241" y="155"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

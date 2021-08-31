@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="CommentsView" customModule="WBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="tableComments" destination="BL8-DT-QCD" id="s3O-Xg-Q9H"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="InG-qe-kDo">
+            <rect key="frame" x="0.0" y="0.0" width="374" height="375"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="BL8-DT-QCD">
+                    <rect key="frame" x="0.0" y="0.0" width="374" height="375"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <connections>
+                        <outlet property="dataSource" destination="InG-qe-kDo" id="cBi-uH-veg"/>
+                        <outlet property="delegate" destination="InG-qe-kDo" id="V0D-f7-aGV"/>
+                    </connections>
+                </tableView>
+            </subviews>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="BL8-DT-QCD" firstAttribute="top" secondItem="InG-qe-kDo" secondAttribute="top" id="0Ue-fw-FVQ"/>
+                <constraint firstItem="BL8-DT-QCD" firstAttribute="leading" secondItem="InG-qe-kDo" secondAttribute="leading" id="WOc-J8-F8C"/>
+                <constraint firstAttribute="bottom" secondItem="BL8-DT-QCD" secondAttribute="bottom" id="aNc-HQ-vb4"/>
+                <constraint firstAttribute="trailing" secondItem="BL8-DT-QCD" secondAttribute="trailing" id="q2k-IG-LMT"/>
+            </constraints>
+            <nil key="simulatedTopBarMetrics"/>
+            <nil key="simulatedBottomBarMetrics"/>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <point key="canvasLocation" x="196" y="96"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
