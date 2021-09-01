@@ -47,9 +47,7 @@ class BookDetailController: UIViewController {
             
         } else {
             bookDetailView.buttonRent.isEnabled = true
-            bookDetailView.buttonRent.backgroundColor = UIColor.systemBlue
-            bookDetailView.buttonRent.setTitleColor(.white, for: .normal)
-            bookDetailView.buttonRent.layer.borderColor = UIColor.white.cgColor
+            bookDetailView.buttonRent.applyGradient()
         }
     }
     

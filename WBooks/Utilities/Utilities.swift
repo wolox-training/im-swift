@@ -43,3 +43,19 @@ extension UIImageView {
         self.contentMode = UIView.ContentMode.scaleAspectFill
     }
 }
+
+extension UIButton{
+    func applyGradient(){
+        let gradientLayer = CAGradientLayer()
+        gradientLayer.frame = self.bounds
+        gradientLayer.colors = [UIColor(red: 0, green: 0.68, blue: 0.93, alpha: 1).cgColor,
+                                UIColor(red: 0.22, green: 0.8, blue: 0.8, alpha: 1).cgColor]
+        gradientLayer.locations = [0, 1]
+        gradientLayer.startPoint = CGPoint(x: 0.06, y: 0.5)
+        gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
+        gradientLayer.cornerRadius = 30
+        self.layer.insertSublayer(gradientLayer, at: 0)
+        setTitleColor(.white, for: .normal)
+    }
+}
+

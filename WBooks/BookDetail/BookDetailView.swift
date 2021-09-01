@@ -33,12 +33,5 @@ final class BookDetailView: NibView {
         }
     }
     
-    @IBOutlet weak var buttonRent: UIButton! {
-        didSet{
-            buttonRent.backgroundColor = .clear
-            buttonRent.layer.cornerRadius = 30
-            buttonRent.layer.borderWidth = 1.5
-            buttonRent.layer.borderColor = UIColor.systemBlue.cgColor
-        }
-    }
+    @IBOutlet weak var buttonRent: UIButton!
 }
