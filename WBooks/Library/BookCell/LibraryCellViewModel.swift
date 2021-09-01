@@ -21,8 +21,6 @@ struct LibraryCellViewModel {
     
     var image: String {
         return book.image
-    }
-    
-    
+    }    
 }
 

@@ -10,10 +10,13 @@ import Alamofire
 
 public class BookRepository {
     
+    private static let baseURL: String = "https://ios-training-backend.herokuapp.com/api/v1"
+    private static let booksURI: String = "/books"
+    
     // fetch with alamofire request
     public func fetchBooks(onSuccess: @escaping ([Book]) -> Void, onError: @escaping (Error) -> Void) {
         // build URL handle response
-        let url = URL(string: "https://ios-training-backend.herokuapp.com/api/v1/books")!
+        let url = URL(string: BookRepository.baseURL+BookRepository.booksURI)!
         //make a request, handle response
         AF.request(url).responseJSON { response in
             //check if request was succesful

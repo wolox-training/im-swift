@@ -54,6 +54,10 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
         tabBarItem.title = "Library"
         
         navigationController?.navigationBar.titleTextAttributes = [.foregroundColor: UIColor.white]
+        
+        // Set the navbar button back only with arrow
+        self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
+        
     }
     
     // MARK: -func for tableView
@@ -81,15 +85,18 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        
-        
         let cell = tableView.dequeueReusableCell(withIdentifier: "LibraryCell", for: indexPath) as! LibraryCell
-        
-        let viewModel = libraryViewModel.getCell(index: indexPath.section)
+        let viewModel = libraryViewModel.getCellViewModel(index: indexPath.section)
         cell.configureCell(with: viewModel)
         
         return cell
+    }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let bookDetailPadreViewController = BookDetailPadreController(nibName: "BookDetailPadreController", bundle: nil)
+        bookDetailPadreViewController.bookDetailPadreViewModel = libraryViewModel.getBookDetailPadreViewModel(index: indexPath.section)
         
+        navigationController?.pushViewController(bookDetailPadreViewController, animated: true)
     }
 }
 
