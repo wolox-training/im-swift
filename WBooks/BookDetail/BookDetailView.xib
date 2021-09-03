@@ -81,17 +81,17 @@
                         <constraint firstAttribute="height" constant="137" id="lg0-Vt-pMr"/>
                     </constraints>
                 </stackView>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="0FV-Mq-UZi">
-                    <rect key="frame" x="30" y="177" width="314" height="148"/>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="20" translatesAutoresizingMaskIntoConstraints="NO" id="0FV-Mq-UZi">
+                    <rect key="frame" x="30" y="187" width="314" height="128"/>
                     <subviews>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hbV-ik-31C">
-                            <rect key="frame" x="0.0" y="0.0" width="314" height="74"/>
+                            <rect key="frame" x="0.0" y="0.0" width="314" height="54"/>
                             <state key="normal" title="ADD TO WISHLIST">
                                 <color key="titleColor" systemColor="systemBlueColor"/>
                             </state>
                         </button>
                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUa-VH-G7g">
-                            <rect key="frame" x="0.0" y="74" width="314" height="74"/>
+                            <rect key="frame" x="0.0" y="74" width="314" height="54"/>
                             <state key="normal" title="RENT">
                                 <color key="titleColor" systemColor="systemBlueColor"/>
                             </state>
@@ -102,13 +102,13 @@
             </subviews>
             <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstAttribute="bottom" secondItem="0FV-Mq-UZi" secondAttribute="bottom" constant="30" id="0dg-a6-KTu"/>
+                <constraint firstAttribute="bottom" secondItem="0FV-Mq-UZi" secondAttribute="bottom" constant="40" id="0dg-a6-KTu"/>
                 <constraint firstItem="Yvj-OZ-kr1" firstAttribute="leading" secondItem="vEh-bC-J5g" secondAttribute="leading" constant="30" id="HyU-Fc-i2a"/>
                 <constraint firstAttribute="trailing" secondItem="0FV-Mq-UZi" secondAttribute="trailing" constant="30" id="IJX-w5-J85"/>
                 <constraint firstItem="Yvj-OZ-kr1" firstAttribute="top" secondItem="vEh-bC-J5g" secondAttribute="top" constant="10" id="RyR-xx-YDR"/>
                 <constraint firstItem="0FV-Mq-UZi" firstAttribute="leading" secondItem="vEh-bC-J5g" secondAttribute="leading" constant="30" id="SF4-If-ipj"/>
                 <constraint firstAttribute="trailing" secondItem="Yvj-OZ-kr1" secondAttribute="trailing" constant="30" id="bsD-aC-fZs"/>
-                <constraint firstItem="0FV-Mq-UZi" firstAttribute="top" secondItem="Yvj-OZ-kr1" secondAttribute="bottom" constant="30" id="htS-OH-0RE"/>
+                <constraint firstItem="0FV-Mq-UZi" firstAttribute="top" secondItem="Yvj-OZ-kr1" secondAttribute="bottom" constant="40" id="htS-OH-0RE"/>
             </constraints>
             <nil key="simulatedTopBarMetrics"/>
             <nil key="simulatedBottomBarMetrics"/>

@@ -27,7 +27,7 @@ final class BookDetailView: NibView {
     @IBOutlet weak var buttonAddtoWishList: UIButton! {
         didSet{
             buttonAddtoWishList.backgroundColor = .clear
-            buttonAddtoWishList.layer.cornerRadius = 30
+            buttonAddtoWishList.layer.cornerRadius = 22
             buttonAddtoWishList.layer.borderWidth = 1.5
             buttonAddtoWishList.layer.borderColor = UIColor.systemBlue.cgColor
         }

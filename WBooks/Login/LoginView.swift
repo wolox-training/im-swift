@@ -18,5 +18,4 @@ final class LoginView: NibView {
             buttonGoogle.layer.borderColor = UIColor.white.cgColor
         }
     }
-    
 }

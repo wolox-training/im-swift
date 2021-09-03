@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="18122" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="18093"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="SuggestView" customModule="WBooks" customModuleProvider="target">
+            <connections>
+                <outlet property="buttonSubmit" destination="gUx-2P-ZIs" id="QkB-6a-ESa"/>
+                <outlet property="fieldAuthor" destination="Xny-cT-G2q" id="q4T-5U-unC"/>
+                <outlet property="fieldDescription" destination="iYk-MA-Zcr" id="dR7-w7-8hH"/>
+                <outlet property="fieldName" destination="pQw-E7-DbP" id="BPM-4D-zoi"/>
+                <outlet property="fieldTopic" destination="Otb-8A-Qia" id="Fsd-2I-nK6"/>
+                <outlet property="fieldYear" destination="iPY-8d-UKN" id="g7n-78-qFH"/>
+                <outlet property="imageView" destination="Myw-8n-Eau" id="2LD-6t-Tgd"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="LGI-vU-gRs">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Kof-uV-bNg">
+                    <rect key="frame" x="20" y="122" width="374" height="674"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="ic_add photo" translatesAutoresizingMaskIntoConstraints="NO" id="Myw-8n-Eau">
+                            <rect key="frame" x="26" y="26" width="96" height="96"/>
+                            <constraints>
+                                <constraint firstAttribute="width" constant="96" id="Han-I4-qf2"/>
+                                <constraint firstAttribute="height" constant="96" id="fgB-VI-q7u"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Book's name" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="pQw-E7-DbP" customClass="setFields" customModule="WBooks" customModuleProvider="target">
+                            <rect key="frame" x="26" y="170" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="PK7-3e-BN1"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Author" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Xny-cT-G2q" customClass="setFields" customModule="WBooks" customModuleProvider="target">
+                            <rect key="frame" x="26" y="220" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="ZUA-if-cSg"/>
+                                <constraint firstAttribute="height" constant="30" id="rFC-fh-LcV"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Year" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iPY-8d-UKN" customClass="setFields" customModule="WBooks" customModuleProvider="target">
+                            <rect key="frame" x="26" y="270" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="kGN-Jb-tgs"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="whN-ua-kBm"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Topic" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Otb-8A-Qia" customClass="setFields" customModule="WBooks" customModuleProvider="target">
+                            <rect key="frame" x="26" y="320" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="MkV-9h-cw3"/>
+                                <constraint firstAttribute="height" constant="30" id="a7I-fg-rhd"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Description" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="iYk-MA-Zcr" customClass="setFields" customModule="WBooks" customModuleProvider="target">
+                            <rect key="frame" x="26" y="370" width="300" height="30"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="30" id="NCS-1Z-A7l"/>
+                                <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="30" id="m33-pM-9od"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                            <textInputTraits key="textInputTraits"/>
+                        </textField>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gUx-2P-ZIs">
+                            <rect key="frame" x="30" y="604" width="314" height="50"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="50" id="qZo-x3-0Ow"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                            <state key="normal" title="SUBMIT"/>
+                        </button>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstItem="Otb-8A-Qia" firstAttribute="top" secondItem="iPY-8d-UKN" secondAttribute="bottom" constant="20" id="1tL-QE-iHN"/>
+                        <constraint firstItem="Xny-cT-G2q" firstAttribute="leading" secondItem="Kof-uV-bNg" secondAttribute="leading" constant="26" id="248-kE-6xL"/>
+                        <constraint firstItem="iPY-8d-UKN" firstAttribute="leading" secondItem="Kof-uV-bNg" secondAttribute="leading" constant="26" id="4BZ-Il-Mln"/>
+                        <constraint firstItem="iPY-8d-UKN" firstAttribute="top" secondItem="Xny-cT-G2q" secondAttribute="bottom" constant="20" id="8RY-Qb-8g1"/>
+                        <constraint firstAttribute="trailing" secondItem="Otb-8A-Qia" secondAttribute="trailing" constant="48" id="C4n-xi-Tfe"/>
+                        <constraint firstItem="pQw-E7-DbP" firstAttribute="top" secondItem="Myw-8n-Eau" secondAttribute="bottom" constant="48" id="G8m-R6-cnf"/>
+                        <constraint firstAttribute="trailing" secondItem="gUx-2P-ZIs" secondAttribute="trailing" constant="30" id="IEA-qN-sUe"/>
+                        <constraint firstItem="Xny-cT-G2q" firstAttribute="top" secondItem="pQw-E7-DbP" secondAttribute="bottom" constant="20" id="Kfk-FS-raf"/>
+                        <constraint firstItem="pQw-E7-DbP" firstAttribute="leading" secondItem="Kof-uV-bNg" secondAttribute="leading" constant="26" id="L1m-GK-1H7"/>
+                        <constraint firstItem="Otb-8A-Qia" firstAttribute="leading" secondItem="Kof-uV-bNg" secondAttribute="leading" constant="26" id="Pbr-nB-ITk"/>
+                        <constraint firstAttribute="trailing" secondItem="iYk-MA-Zcr" secondAttribute="trailing" constant="48" id="bkC-u8-XAn"/>
+                        <constraint firstAttribute="trailing" secondItem="pQw-E7-DbP" secondAttribute="trailing" constant="48" id="d7Y-cx-d0W"/>
+                        <constraint firstAttribute="trailing" secondItem="iPY-8d-UKN" secondAttribute="trailing" constant="48" id="gC3-7L-5MF"/>
+                        <constraint firstItem="iYk-MA-Zcr" firstAttribute="leading" secondItem="Kof-uV-bNg" secondAttribute="leading" constant="26" id="ikA-yQ-HXP"/>
+                        <constraint firstAttribute="trailing" secondItem="Xny-cT-G2q" secondAttribute="trailing" constant="48" id="ni9-4I-Tpk"/>
+                        <constraint firstItem="Myw-8n-Eau" firstAttribute="leading" secondItem="Kof-uV-bNg" secondAttribute="leading" constant="26" id="phl-Tz-tcr"/>
+                        <constraint firstItem="iYk-MA-Zcr" firstAttribute="top" secondItem="Otb-8A-Qia" secondAttribute="bottom" constant="20" id="poI-cD-y66"/>
+                        <constraint firstAttribute="bottom" secondItem="gUx-2P-ZIs" secondAttribute="bottom" constant="20" id="wfu-nS-6p3"/>
+                        <constraint firstItem="gUx-2P-ZIs" firstAttribute="leading" secondItem="Kof-uV-bNg" secondAttribute="leading" constant="30" id="yAF-92-iKb"/>
+                        <constraint firstItem="Myw-8n-Eau" firstAttribute="top" secondItem="Kof-uV-bNg" secondAttribute="top" constant="26" id="yEK-ec-Ac3"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9mD-ww-swI"/>
+            <color key="backgroundColor" red="0.91764705882352937" green="0.96470588235294119" blue="0.98039215686274506" alpha="1" colorSpace="calibratedRGB"/>
+            <constraints>
+                <constraint firstItem="Kof-uV-bNg" firstAttribute="top" secondItem="LGI-vU-gRs" secondAttribute="top" constant="122" id="Erk-Hb-Urc"/>
+                <constraint firstItem="Kof-uV-bNg" firstAttribute="leading" secondItem="LGI-vU-gRs" secondAttribute="leading" constant="20" id="WU0-3b-VnW"/>
+                <constraint firstAttribute="trailing" secondItem="Kof-uV-bNg" secondAttribute="trailing" constant="20" id="d4o-Lt-VQV"/>
+                <constraint firstAttribute="bottom" secondItem="Kof-uV-bNg" secondAttribute="bottom" constant="100" id="q5B-19-mR7"/>
+            </constraints>
+            <point key="canvasLocation" x="177" y="163"/>
+        </view>
+    </objects>
+    <designables>
+        <designable name="Otb-8A-Qia">
+            <size key="intrinsicContentSize" width="63" height="34"/>
+        </designable>
+        <designable name="Xny-cT-G2q">
+            <size key="intrinsicContentSize" width="71.5" height="34"/>
+        </designable>
+        <designable name="iPY-8d-UKN">
+            <size key="intrinsicContentSize" width="56.5" height="34"/>
+        </designable>
+        <designable name="iYk-MA-Zcr">
+            <size key="intrinsicContentSize" width="102" height="34"/>
+        </designable>
+        <designable name="pQw-E7-DbP">
+            <size key="intrinsicContentSize" width="111.5" height="34"/>
+        </designable>
+    </designables>
+    <resources>
+        <image name="ic_add photo" width="96" height="96"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

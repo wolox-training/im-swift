@@ -53,9 +53,43 @@ extension UIButton{
         gradientLayer.locations = [0, 1]
         gradientLayer.startPoint = CGPoint(x: 0.06, y: 0.5)
         gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
-        gradientLayer.cornerRadius = 30
+        gradientLayer.cornerRadius = 22
         self.layer.insertSublayer(gradientLayer, at: 0)
         setTitleColor(.white, for: .normal)
+    }
+}
+
+extension UIFont {
+    static func systemFontItalic(size fontSize: CGFloat = 17.0, fontWeight: UIFont.Weight = .regular) -> UIFont {
+        let font = UIFont.systemFont(ofSize: fontSize, weight: fontWeight)
+        return UIFont(descriptor: font.fontDescriptor.withSymbolicTraits(.traitItalic)!, size: fontSize)
+    }
+}
+
+extension UITextField {
+    func filled() -> Bool {
+        if !(text?.isEmpty ?? true) {
+            return true
+        }
+        return false
+    }
+}
+
+@IBDesignable
+class setFields: UITextField {
+    override func awakeFromNib() {
+        attributedPlaceholder = NSAttributedString(string: self.placeholder != nil ? self.placeholder! : "", attributes: [
+            .foregroundColor: UIColor.lightGray,
+            .font: UIFont.italicSystemFont(ofSize: 14),
+        ])
+        
+        let bottomLine = CALayer()
+        
+        bottomLine.frame = CGRect(x: 0.0, y: self.bounds.height + 3, width: self.bounds.width, height: 0.5)
+        bottomLine.backgroundColor = UIColor.lightGray.cgColor
+        
+        self.borderStyle = UITextField.BorderStyle.none
+        self.layer.addSublayer(bottomLine)
     }
 }
 
