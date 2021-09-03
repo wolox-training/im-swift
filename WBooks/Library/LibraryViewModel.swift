@@ -12,28 +12,28 @@ class LibraryViewModel {
     var books = [Book]()
     let api = BookRepository()
     
-    
-    func getCell(index: Int) -> LibraryCellViewModel {
-        let myCustomCellViewModel = LibraryCellViewModel(book: books[index])
-        return myCustomCellViewModel
-    }
-    
     func getBookRepo(action: @escaping ([Book]) -> () ) {
-        
         let onSuccess = { (books: [Book]) in
-            print(books)
             self.books = books
             action(books)
         }
-        
         let onError = { error in
             print(error)
         }
-        
         api.fetchBooks(onSuccess: onSuccess, onError: onError)
     }
     
     func numberOfBooks() -> Int {
         return books.count
+    }
+    
+    func getCellViewModel(index: Int) -> LibraryCellViewModel {
+        let myCustomCellViewModel = LibraryCellViewModel(book: books[index])
+        return myCustomCellViewModel
+    }
+    
+    func getBookDetailViewModel(index: Int) -> BookDetailViewModel {
+        let myCustomBookDetailViewModel = BookDetailViewModel(book: books[index])
+        return myCustomBookDetailViewModel
     }
 }
