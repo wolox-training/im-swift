@@ -73,11 +73,36 @@ extension UITextField {
         }
         return false
     }
+    
+    func ok() {
+        let bottomLine = CALayer()
+        
+        bottomLine.frame = CGRect(x: 0.0, y: self.bounds.height + 3, width: self.bounds.width, height: 0.5)
+        
+        bottomLine.backgroundColor = UIColor.lightGray.cgColor
+        
+        self.borderStyle = UITextField.BorderStyle.none
+        
+        self.layer.addSublayer(bottomLine)
+    }
+    
+    func bad() {
+        let bottomLine = CALayer()
+        
+        bottomLine.frame = CGRect(x: 0.0, y: self.bounds.height + 3, width: self.bounds.width, height: 0.5)
+        
+        bottomLine.backgroundColor = UIColor.red.cgColor
+        
+        self.borderStyle = UITextField.BorderStyle.none
+        
+        self.layer.addSublayer(bottomLine)
+    }
 }
 
 @IBDesignable
 class setFields: UITextField {
     override func awakeFromNib() {
+        
         attributedPlaceholder = NSAttributedString(string: self.placeholder != nil ? self.placeholder! : "", attributes: [
             .foregroundColor: UIColor.lightGray,
             .font: UIFont.italicSystemFont(ofSize: 14),
@@ -86,10 +111,13 @@ class setFields: UITextField {
         let bottomLine = CALayer()
         
         bottomLine.frame = CGRect(x: 0.0, y: self.bounds.height + 3, width: self.bounds.width, height: 0.5)
-        bottomLine.backgroundColor = UIColor.lightGray.cgColor
+        
+        bottomLine.backgroundColor = UIColor.red.cgColor
         
         self.borderStyle = UITextField.BorderStyle.none
+        
         self.layer.addSublayer(bottomLine)
     }
+    
 }
 

@@ -37,7 +37,6 @@ class SuggestViewModel {
         ]
         let api = Post(params: dictionary)
         api.post()
-        
     }
     
     

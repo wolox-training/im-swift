@@ -8,7 +8,7 @@
 import UIKit
 
 
-final class SuggestController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate {
+final class SuggestController: UIViewController, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UITextFieldDelegate {
     
     private lazy var suggestView: SuggestView = SuggestView()
     
@@ -18,6 +18,13 @@ final class SuggestController: UIViewController, UIImagePickerControllerDelegate
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        //TextFields delegates
+        suggestView.fieldName.delegate = self
+        suggestView.fieldAuthor.delegate = self
+        suggestView.fieldYear.delegate = self
+        suggestView.fieldTopic.delegate = self
+        suggestView.fieldDescription.delegate = self
         
         //image as button
         let tapGestureRecognizer = UITapGestureRecognizer(target: self, action: #selector (imageTapped(tapGestureRecognizer:)))
@@ -84,15 +91,11 @@ final class SuggestController: UIViewController, UIImagePickerControllerDelegate
     
     @objc func buttonClicked() {
         
-        print("boton clickeado")
-        
         if suggestView.fieldName.filled() &&
             suggestView.fieldAuthor.filled() &&
             suggestView.fieldYear.filled() &&
             suggestView.fieldTopic.filled() &&
             suggestView.fieldDescription.filled() {
-            
-            print("todo relleno")
             
             let suggestViewModel = SuggestViewModel(title: suggestView.fieldName.text!, author: suggestView.fieldAuthor.text!, year: suggestView.fieldYear.text!, genre: suggestView.fieldTopic.text!)
             suggestViewModel.postBook()
@@ -106,6 +109,53 @@ final class SuggestController: UIViewController, UIImagePickerControllerDelegate
         } else {
             print("vacio")
         }
+    }
+    
+    // MARK: -delegate for the textField
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        
+        if suggestView.fieldName.filled() {
+            suggestView.fieldName.ok()
+        } else {
+            suggestView.fieldName.bad()
+        }
+        
+        if suggestView.fieldAuthor.filled() {
+            suggestView.fieldAuthor.ok()
+        } else {
+            suggestView.fieldAuthor.bad()
+        }
+        
+        if suggestView.fieldYear.filled() {
+            suggestView.fieldYear.ok()
+        } else {
+            suggestView.fieldYear.bad()
+        }
+        
+        if suggestView.fieldTopic.filled() {
+            suggestView.fieldTopic.ok()
+        } else {
+            suggestView.fieldTopic.bad()
+        }
+        
+        if suggestView.fieldDescription.filled() {
+            suggestView.fieldDescription.ok()
+        } else {
+            suggestView.fieldDescription.bad()
+        }
+        
+        if suggestView.fieldName.filled() &&
+            suggestView.fieldAuthor.filled() &&
+            suggestView.fieldYear.filled() &&
+            suggestView.fieldTopic.filled() &&
+            suggestView.fieldDescription.filled() {
+            print("lleno")
+            
+        } else {
+            print("vacioooo")
+        }
+        
+        
     }
     
     // MARK: -func for the NavigationBar config
@@ -123,5 +173,7 @@ final class SuggestController: UIViewController, UIImagePickerControllerDelegate
         self.navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
     }
 }
+
+
 
 

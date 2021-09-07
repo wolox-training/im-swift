@@ -15,12 +15,12 @@ struct CommentCellViewModel {
         return comment.id
     }
     
-    var book_id: Int {
-        return comment.book_id
+    var bookId: Int {
+        return comment.bookId
     }
     
-    var user_id: Int {
-        return comment.user_id
+    var userId: Int {
+        return comment.userId
     }
     
     var content: String {

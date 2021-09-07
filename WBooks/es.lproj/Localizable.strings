@@ -8,3 +8,9 @@
 
 /* LibraryView */
 "TITLE_NAVBAR" = "Biblioteca";
+
+/* Alert BookDetailController */
+"MESSAGE_ALERT" = "Libro no disponible";
+
+/* ContainerView */
+"TITLE_CONTAINER" = "DETALLE DE LIBRO";

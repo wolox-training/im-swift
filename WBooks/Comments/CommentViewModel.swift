@@ -9,14 +9,18 @@ import Foundation
 
 class CommentViewModel {
     
-    var id: Int!
+    var id: Int
+    
+    init(id: Int) {
+        self.id = id
+    }
     
     var comments = [Comment]()
     let api = CommentRepository()
     
     func getCommentRepo(action: @escaping ([Comment]) -> () ) {
-        let onSuccess = { (comments: [Comment]) in
-            self.comments = comments
+        let onSuccess = { [weak self] (comments: [Comment]) in
+            self?.comments = comments
             action(comments)
         }
         let onError = { error in

@@ -45,12 +45,12 @@
 		FC66C75326C406A800346394 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75226C406A800346394 /* Utilities.swift */; };
 		FC66C76026C56D7500346394 /* Comment.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75F26C56D7500346394 /* Comment.swift */; };
 		FC66C76226C56DFD00346394 /* CommentRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C76126C56DFD00346394 /* CommentRepository.swift */; };
-		FC68423A26C6A0DF00555F5D /* BookDetailPadreView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC68423926C6A0DF00555F5D /* BookDetailPadreView.xib */; };
-		FC68423E26C6A17100555F5D /* BookDetailPadreController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68423D26C6A17100555F5D /* BookDetailPadreController.swift */; };
-		FC68424026C6A19300555F5D /* BookDetailPadreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68423F26C6A19300555F5D /* BookDetailPadreViewModel.swift */; };
+		FC68423A26C6A0DF00555F5D /* BookDetailContainerView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC68423926C6A0DF00555F5D /* BookDetailContainerView.xib */; };
+		FC68423E26C6A17100555F5D /* BookDetailContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68423D26C6A17100555F5D /* BookDetailContainerController.swift */; };
+		FC68424026C6A19300555F5D /* BookDetailContainerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68423F26C6A19300555F5D /* BookDetailContainerViewModel.swift */; };
 		FC68424326C6A4F500555F5D /* BookDetailView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC68424226C6A4F500555F5D /* BookDetailView.xib */; };
 		FC68424526C6A53100555F5D /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68424426C6A53100555F5D /* BookDetailView.swift */; };
-		FC68424726C6A5F200555F5D /* BookDetailPadreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68424626C6A5F200555F5D /* BookDetailPadreView.swift */; };
+		FC68424726C6A5F200555F5D /* BookDetailContainerView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68424626C6A5F200555F5D /* BookDetailContainerView.swift */; };
 		FC68424926C6A71F00555F5D /* BookDetailController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68424826C6A71F00555F5D /* BookDetailController.swift */; };
 		FC68424B26C6A75600555F5D /* BookDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68424A26C6A75600555F5D /* BookDetailViewModel.swift */; };
 		FC68424E26C6AA5000555F5D /* CommentsView.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC68424D26C6AA5000555F5D /* CommentsView.xib */; };
@@ -132,12 +132,12 @@
 		FC66C75226C406A800346394 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
 		FC66C75F26C56D7500346394 /* Comment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Comment.swift; sourceTree = "<group>"; };
 		FC66C76126C56DFD00346394 /* CommentRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentRepository.swift; sourceTree = "<group>"; };
-		FC68423926C6A0DF00555F5D /* BookDetailPadreView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailPadreView.xib; sourceTree = "<group>"; };
-		FC68423D26C6A17100555F5D /* BookDetailPadreController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailPadreController.swift; sourceTree = "<group>"; };
-		FC68423F26C6A19300555F5D /* BookDetailPadreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailPadreViewModel.swift; sourceTree = "<group>"; };
+		FC68423926C6A0DF00555F5D /* BookDetailContainerView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailContainerView.xib; sourceTree = "<group>"; };
+		FC68423D26C6A17100555F5D /* BookDetailContainerController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailContainerController.swift; sourceTree = "<group>"; };
+		FC68423F26C6A19300555F5D /* BookDetailContainerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailContainerViewModel.swift; sourceTree = "<group>"; };
 		FC68424226C6A4F500555F5D /* BookDetailView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = BookDetailView.xib; sourceTree = "<group>"; };
 		FC68424426C6A53100555F5D /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
-		FC68424626C6A5F200555F5D /* BookDetailPadreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailPadreView.swift; sourceTree = "<group>"; };
+		FC68424626C6A5F200555F5D /* BookDetailContainerView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailContainerView.swift; sourceTree = "<group>"; };
 		FC68424826C6A71F00555F5D /* BookDetailController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailController.swift; sourceTree = "<group>"; };
 		FC68424A26C6A75600555F5D /* BookDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailViewModel.swift; sourceTree = "<group>"; };
 		FC68424D26C6AA5000555F5D /* CommentsView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentsView.xib; sourceTree = "<group>"; };
@@ -271,13 +271,13 @@
 		F0ECB5DC26B32433009FA4B5 /* WBooks */ = {
 			isa = PBXGroup;
 			children = (
+				6554490626B99890001D70E1 /* Shared */,
 				FC66C75126C4062200346394 /* Utilities */,
 				FC20E95726C1597200F4E302 /* Repository */,
 				FC4B5D3426BD6DA30065409F /* Models */,
-				6554490626B99890001D70E1 /* Shared */,
 				655448FF26B984B5001D70E1 /* Login */,
 				F0D3363026BAFE7800B11648 /* Library */,
-				FC68423826C6A05B00555F5D /* BookDetailPadre */,
+				FC68423826C6A05B00555F5D /* BookDetailContainer */,
 				FC68424126C6A4B000555F5D /* BookDetail */,
 				FC68424C26C6A97300555F5D /* Comments */,
 				FC33993526DFA28600443EB7 /* Suggest */,
@@ -370,15 +370,15 @@
 			path = Utilities;
 			sourceTree = "<group>";
 		};
-		FC68423826C6A05B00555F5D /* BookDetailPadre */ = {
+		FC68423826C6A05B00555F5D /* BookDetailContainer */ = {
 			isa = PBXGroup;
 			children = (
-				FC68423926C6A0DF00555F5D /* BookDetailPadreView.xib */,
-				FC68424626C6A5F200555F5D /* BookDetailPadreView.swift */,
-				FC68423D26C6A17100555F5D /* BookDetailPadreController.swift */,
-				FC68423F26C6A19300555F5D /* BookDetailPadreViewModel.swift */,
+				FC68423926C6A0DF00555F5D /* BookDetailContainerView.xib */,
+				FC68424626C6A5F200555F5D /* BookDetailContainerView.swift */,
+				FC68423D26C6A17100555F5D /* BookDetailContainerController.swift */,
+				FC68423F26C6A19300555F5D /* BookDetailContainerViewModel.swift */,
 			);
-			path = BookDetailPadre;
+			path = BookDetailContainer;
 			sourceTree = "<group>";
 		};
 		FC68424126C6A4B000555F5D /* BookDetail */ = {
@@ -519,7 +519,7 @@
 				F0ECB5E726B32434009FA4B5 /* Assets.xcassets in Resources */,
 				6554490326B984CC001D70E1 /* LoginView.xib in Resources */,
 				FC68424E26C6AA5000555F5D /* CommentsView.xib in Resources */,
-				FC68423A26C6A0DF00555F5D /* BookDetailPadreView.xib in Resources */,
+				FC68423A26C6A0DF00555F5D /* BookDetailContainerView.xib in Resources */,
 				FC68424326C6A4F500555F5D /* BookDetailView.xib in Resources */,
 				F0D3362E26BABEF200B11648 /* LibraryCell.xib in Resources */,
 				FC33993726DFA2D800443EB7 /* SuggestView.xib in Resources */,
@@ -652,7 +652,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC68424726C6A5F200555F5D /* BookDetailPadreView.swift in Sources */,
+				FC68424726C6A5F200555F5D /* BookDetailContainerView.swift in Sources */,
 				FC68425426C6AC3100555F5D /* CommentViewModel.swift in Sources */,
 				FC68424B26C6A75600555F5D /* BookDetailViewModel.swift in Sources */,
 				FC68424926C6A71F00555F5D /* BookDetailController.swift in Sources */,
@@ -675,13 +675,13 @@
 				6554490126B984C3001D70E1 /* LoginView.swift in Sources */,
 				FC66C74726C2B6D100346394 /* RentalController.swift in Sources */,
 				FC4B5D3626BD6DC10065409F /* Book.swift in Sources */,
-				FC68423E26C6A17100555F5D /* BookDetailPadreController.swift in Sources */,
+				FC68423E26C6A17100555F5D /* BookDetailContainerController.swift in Sources */,
 				FC33993B26DFA37200443EB7 /* SuggestController.swift in Sources */,
 				FC1C8F8026DE448A00A753BF /* CommentCell.swift in Sources */,
 				FC4B5D3B26BD9CDD0065409F /* LibraryViewModel.swift in Sources */,
 				FC66C75326C406A800346394 /* Utilities.swift in Sources */,
 				F0ECB5E026B32433009FA4B5 /* SceneDelegate.swift in Sources */,
-				FC68424026C6A19300555F5D /* BookDetailPadreViewModel.swift in Sources */,
+				FC68424026C6A19300555F5D /* BookDetailContainerViewModel.swift in Sources */,
 				FC68425226C6AAA700555F5D /* CommentsController.swift in Sources */,
 				FC33993D26DFA45900443EB7 /* SuggestViewModel.swift in Sources */,
 				FC1C8F7E26DE42FA00A753BF /* CommentCellViewModel.swift in Sources */,

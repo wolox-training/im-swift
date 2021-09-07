@@ -9,7 +9,16 @@ import UIKit
 
 class CommentsController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
-    let commentViewModel = CommentViewModel()
+    private var commentViewModel: CommentViewModel
+    
+    init(commentViewModel: CommentViewModel) {
+        self.commentViewModel = commentViewModel
+        super.init(nibName: nil, bundle: nil)
+    }
+
+    required init?(coder: NSCoder) {
+        fatalError("init(coder:) has not been implemented")
+    }
     
     private lazy var commentsView: CommentsView = CommentsView()
     

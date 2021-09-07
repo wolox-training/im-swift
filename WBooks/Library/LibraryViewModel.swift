@@ -13,8 +13,8 @@ class LibraryViewModel {
     let api = BookRepository()
     
     func getBookRepo(action: @escaping ([Book]) -> () ) {
-        let onSuccess = { (books: [Book]) in
-            self.books = books
+        let onSuccess = { [weak self] (books: [Book]) in
+            self?.books = books
             action(books)
         }
         let onError = { error in
@@ -32,10 +32,8 @@ class LibraryViewModel {
         return myCustomCellViewModel
     }
     
-    func getBookDetailPadreViewModel(index: Int) -> BookDetailPadreViewModel {
-        let myCustomBookDetailPadreViewModel = BookDetailPadreViewModel(book: books[index])
-        return myCustomBookDetailPadreViewModel
+    func getBookDetailContainerViewModel(index: Int) -> BookDetailContainerViewModel {
+        let myCustomBookDetailContainerViewModel = BookDetailContainerViewModel(book: books[index])
+        return myCustomBookDetailContainerViewModel
     }
-    
-    
 }

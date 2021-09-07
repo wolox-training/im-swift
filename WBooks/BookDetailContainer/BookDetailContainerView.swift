@@ -8,7 +8,7 @@
 import Foundation
 import UIKit
 
-final class BookDetailPadreView: NibView {
+final class BookDetailContainerView: NibView {
     
     @IBOutlet weak var viewDetailContainer: UIView!{
         didSet{

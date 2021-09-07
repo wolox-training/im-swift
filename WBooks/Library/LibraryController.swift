@@ -93,10 +93,10 @@ class LibraryController: UIViewController, UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        let bookDetailPadreViewController = BookDetailPadreController(nibName: "BookDetailPadreController", bundle: nil)
-        bookDetailPadreViewController.bookDetailPadreViewModel = libraryViewModel.getBookDetailPadreViewModel(index: indexPath.section)
         
-        navigationController?.pushViewController(bookDetailPadreViewController, animated: true)
+        let bookDetailContainerViewController = BookDetailContainerController(bookDetailPadreViewModel: libraryViewModel.getBookDetailContainerViewModel(index: indexPath.section))
+        
+        navigationController?.pushViewController(bookDetailContainerViewController, animated: true)
     }
 }
 

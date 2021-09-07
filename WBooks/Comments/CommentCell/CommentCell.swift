@@ -13,16 +13,12 @@ class CommentCell: UITableViewCell {
     @IBOutlet weak var labelComment: UILabel!
     @IBOutlet weak var imageUser: UIImageView!
     
-    override func awakeFromNib() {
-        super.awakeFromNib()
-    }
-    
     override func setSelected(_ selected: Bool, animated: Bool) {
         super.setSelected(selected, animated: animated)
     }
     
     func configureCell(with viewModel: CommentCellViewModel) {
-        labelName.text = String(viewModel.user_id)
+        labelName.text = String(viewModel.userId)
         labelComment.text = viewModel.content
         imageUser.setRounded()
     }

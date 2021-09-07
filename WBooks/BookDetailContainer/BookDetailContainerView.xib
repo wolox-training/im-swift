@@ -7,7 +7,7 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookDetailPadreView" customModule="WBooks" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="BookDetailContainerView" customModule="WBooks" customModuleProvider="target">
             <connections>
                 <outlet property="viewCommentsContainer" destination="03g-cN-471" id="nyz-Ow-uMR"/>
                 <outlet property="viewDetailContainer" destination="Hot-VI-SLr" id="7y0-kI-VNT"/>

@@ -34,4 +34,31 @@ final class BookDetailView: NibView {
     }
     
     @IBOutlet weak var buttonRent: UIButton!
+    
+    func config(title: String, year: String, genre: String, author: String, status: String, image: String) {
+        
+        titleBook.text = title
+        authorBook.text = author
+        yearBook.text = year
+        genreBook.text = genre
+        
+        _ = imageBook.downloaded(from: image)
+        
+        if status == "Available" {
+            statusBook.text = status
+            statusBook.textColor = UIColor.systemGreen
+        } else {
+            statusBook.text = status
+        }
+        
+        if status == "Not available" {
+            buttonRent.backgroundColor = UIColor.gray
+            buttonRent.setTitleColor(.white, for: .normal)
+            buttonRent.layer.borderColor = UIColor.white.cgColor
+            
+        } else {
+            buttonRent.isEnabled = true
+            buttonRent.applyGradient()
+        }
+    }
 }
