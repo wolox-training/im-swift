@@ -25,7 +25,7 @@ final class BookDetailView: NibView {
     
     
     @IBOutlet weak var buttonAddtoWishList: UIButton! {
-        didSet{
+        didSet {
             buttonAddtoWishList.backgroundColor = .clear
             buttonAddtoWishList.layer.cornerRadius = 22
             buttonAddtoWishList.layer.borderWidth = 1.5
@@ -33,7 +33,11 @@ final class BookDetailView: NibView {
         }
     }
     
-    @IBOutlet weak var buttonRent: UIButton!
+    @IBOutlet weak var buttonRent: UIButton! {
+        didSet {
+            buttonRent.setTitleColor(.white, for: .normal)
+        }
+    }
     
     func config(title: String, year: String, genre: String, author: String, status: String, image: String) {
         

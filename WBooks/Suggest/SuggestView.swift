@@ -24,6 +24,7 @@ final class SuggestView: NibView {
     @IBOutlet weak var buttonSubmit: UIButton!{
         didSet{
             buttonSubmit.applyGradient()
+            buttonSubmit.setTitleColor(.white, for: .normal)
         }
     }
 }
