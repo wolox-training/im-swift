@@ -102,7 +102,7 @@ extension UITextField {
 @IBDesignable
 class setFields: UITextField {
     override func awakeFromNib() {
-        
+        super.awakeFromNib()
         attributedPlaceholder = NSAttributedString(string: self.placeholder != nil ? self.placeholder! : "", attributes: [
             .foregroundColor: UIColor.lightGray,
             .font: UIFont.italicSystemFont(ofSize: 14),

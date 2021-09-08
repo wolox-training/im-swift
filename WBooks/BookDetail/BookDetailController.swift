@@ -42,7 +42,7 @@ class BookDetailController: UIViewController {
     }
     
     @objc func buttonClicked() {
-        if bookDetailViewModel.status == "Not available" {
+        if bookDetailViewModel.status() == "Not available" {
             // create the alert
             let message = NSLocalizedString("MESSAGE_ALERT", comment: "Message alert")
             let alert = UIAlertController(title: "!", message: message, preferredStyle: UIAlertController.Style.alert)
@@ -51,7 +51,8 @@ class BookDetailController: UIViewController {
             // show the alert
             self.present(alert, animated: true, completion: nil)
         } else {
-            //print("api request")
+            print("api request")
+            bookDetailViewModel.postRent()
         }
     }
 }

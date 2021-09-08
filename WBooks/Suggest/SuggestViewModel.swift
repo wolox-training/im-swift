@@ -35,7 +35,7 @@ class SuggestViewModel {
             "status": "\(status)",
             "genre": "\(genre)",
         ]
-        let api = Post(params: dictionary)
+        let api = PostSuggest(params: dictionary)
         api.post()
     }
     

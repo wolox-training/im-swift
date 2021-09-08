@@ -7,36 +7,54 @@
 
 import Foundation
 
-struct BookDetailViewModel {
-
+class BookDetailViewModel {
+    
     var book: Book
-
-    var id: Int {
+    
+    init(book : Book) {
+        self.book = book
+    }
+    
+    func id() -> Int {
         return book.id
     }
-
-    var title: String {
+    func title() -> String {
         return book.title
     }
-
-    var author: String {
+    func author() -> String {
         return book.author
     }
-
-    var image: String {
+    func image() -> String {
         return book.image
     }
-
-    var status: String {
+    func status() -> String {
         return book.status
     }
-
-    var year: String {
+    func year() -> String {
         return book.year
     }
-
-    var genre: String {
+    func genre() -> String {
         return book.genre
     }
-
+    
+    func postRent() {
+        let dictionary = [
+            
+            //"id": "3",
+            "user_id": "3",
+            "book_id": "\(book.id)",
+            "to": "2021-03-22",
+            "from": "2021-03-19",
+            //"created_at": "2021-03-19T15:30:06.072Z",
+            //"updated_at": "2021-03-19T15:30:06.072Z"
+            
+        ]
+        let api = PostRent(params: dictionary)
+        api.post()
+    }
+    
+    
+    
+    
+    
 }

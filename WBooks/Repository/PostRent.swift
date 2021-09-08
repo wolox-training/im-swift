@@ -1,14 +1,14 @@
 //
-//  Post.swift
+//  PostRent.swift
 //  WBooks
 //
-//  Created by ignacio.mendez on 02/09/2021.
+//  Created by ignacio.mendez on 08/09/2021.
 //
 
 import Foundation
 import Alamofire
 
-public class Post {
+public class PostRent{
     
     var params: [String: String]
     
@@ -17,10 +17,10 @@ public class Post {
     }
     
     private static let baseURL: String = "https://ios-training-backend.herokuapp.com/api/v1"
-    private static let booksURI: String = "/books"
+    private static let booksURI: String = "/users/3/rents"
     
     public func post() {
-        let url = URL(string: Post.baseURL+Post.booksURI)!
+        let url = URL(string: PostRent.baseURL+PostRent.booksURI)!
         AF.request(url, method: .post, parameters: params, encoding: JSONEncoding.default, headers: nil).validate(statusCode: 200 ..< 299).responseJSON { AFdata in
             do {
                 guard let jsonObject = try JSONSerialization.jsonObject(with: AFdata.data!) as? [String: Any] else {

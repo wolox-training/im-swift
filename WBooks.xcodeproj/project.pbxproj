@@ -26,7 +26,7 @@
 		F0ECB5F526B32434009FA4B5 /* WBooksTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECB5F426B32434009FA4B5 /* WBooksTests.swift */; };
 		F0ECB60026B32434009FA4B5 /* WBooksUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0ECB5FF26B32434009FA4B5 /* WBooksUITests.swift */; };
 		F2ED3C8817BFC6E83AC7AD95 /* Pods_WBooksTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8CAD679C485AF5B124C27838 /* Pods_WBooksTests.framework */; };
-		FC1A8A7B26E132D70048D865 /* Post.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A8A7A26E132D70048D865 /* Post.swift */; };
+		FC1A8A7B26E132D70048D865 /* PostSuggest.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1A8A7A26E132D70048D865 /* PostSuggest.swift */; };
 		FC1C8F7A26DE42C200A753BF /* CommentCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = FC1C8F7926DE42C200A753BF /* CommentCell.xib */; };
 		FC1C8F7E26DE42FA00A753BF /* CommentCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C8F7D26DE42FA00A753BF /* CommentCellViewModel.swift */; };
 		FC1C8F8026DE448A00A753BF /* CommentCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC1C8F7F26DE448A00A753BF /* CommentCell.swift */; };
@@ -57,6 +57,7 @@
 		FC68425026C6AA6500555F5D /* CommentsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68424F26C6AA6500555F5D /* CommentsView.swift */; };
 		FC68425226C6AAA700555F5D /* CommentsController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68425126C6AAA700555F5D /* CommentsController.swift */; };
 		FC68425426C6AC3100555F5D /* CommentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC68425326C6AC3100555F5D /* CommentViewModel.swift */; };
+		FCFEF77C26E91B1C000C56C9 /* PostRent.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCFEF77B26E91B1C000C56C9 /* PostRent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,7 +111,7 @@
 		F0ECB5FB26B32434009FA4B5 /* WBooksUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WBooksUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F0ECB5FF26B32434009FA4B5 /* WBooksUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WBooksUITests.swift; sourceTree = "<group>"; };
 		F0ECB60126B32434009FA4B5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		FC1A8A7A26E132D70048D865 /* Post.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Post.swift; sourceTree = "<group>"; };
+		FC1A8A7A26E132D70048D865 /* PostSuggest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostSuggest.swift; sourceTree = "<group>"; };
 		FC1C8F7926DE42C200A753BF /* CommentCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CommentCell.xib; sourceTree = "<group>"; };
 		FC1C8F7D26DE42FA00A753BF /* CommentCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCellViewModel.swift; sourceTree = "<group>"; };
 		FC1C8F7F26DE448A00A753BF /* CommentCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentCell.swift; sourceTree = "<group>"; };
@@ -144,6 +145,7 @@
 		FC68424F26C6AA6500555F5D /* CommentsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsView.swift; sourceTree = "<group>"; };
 		FC68425126C6AAA700555F5D /* CommentsController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentsController.swift; sourceTree = "<group>"; };
 		FC68425326C6AC3100555F5D /* CommentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommentViewModel.swift; sourceTree = "<group>"; };
+		FCFEF77B26E91B1C000C56C9 /* PostRent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PostRent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -327,7 +329,8 @@
 			children = (
 				FC20E95826C159A300F4E302 /* BookRepository.swift */,
 				FC66C76126C56DFD00346394 /* CommentRepository.swift */,
-				FC1A8A7A26E132D70048D865 /* Post.swift */,
+				FC1A8A7A26E132D70048D865 /* PostSuggest.swift */,
+				FCFEF77B26E91B1C000C56C9 /* PostRent.swift */,
 			);
 			path = Repository;
 			sourceTree = "<group>";
@@ -664,12 +667,13 @@
 				FC66C76226C56DFD00346394 /* CommentRepository.swift in Sources */,
 				F0D3362626BAAFC500B11648 /* LibraryView.swift in Sources */,
 				FC68424526C6A53100555F5D /* BookDetailView.swift in Sources */,
-				FC1A8A7B26E132D70048D865 /* Post.swift in Sources */,
+				FC1A8A7B26E132D70048D865 /* PostSuggest.swift in Sources */,
 				F0D3363226BC38FF00B11648 /* TabBarController.swift in Sources */,
 				6554490526B984D7001D70E1 /* LoginController.swift in Sources */,
 				FC68425026C6AA6500555F5D /* CommentsView.swift in Sources */,
 				F0D3362A26BAB04900B11648 /* LibraryController.swift in Sources */,
 				FC66C74326C2B53400346394 /* WishListController.swift in Sources */,
+				FCFEF77C26E91B1C000C56C9 /* PostRent.swift in Sources */,
 				FC20E95926C159A300F4E302 /* BookRepository.swift in Sources */,
 				F0ECB5DE26B32433009FA4B5 /* AppDelegate.swift in Sources */,
 				6554490126B984C3001D70E1 /* LoginView.swift in Sources */,
