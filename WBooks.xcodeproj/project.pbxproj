@@ -40,6 +40,12 @@
 		FC4B5D3626BD6DC10065409F /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B5D3526BD6DC10065409F /* Book.swift */; };
 		FC4B5D3B26BD9CDD0065409F /* LibraryViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B5D3A26BD9CDD0065409F /* LibraryViewModel.swift */; };
 		FC4B5D3D26BDA3160065409F /* LibraryCellViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC4B5D3C26BDA3160065409F /* LibraryCellViewModel.swift */; };
+		FC5F01AE26EBB1350098789E /* LoginViewPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F01AD26EBB1350098789E /* LoginViewPro.swift */; };
+		FC5F01B026EBB1790098789E /* LoginControllerPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F01AF26EBB1790098789E /* LoginControllerPro.swift */; };
+		FC5F01B226ECD9710098789E /* LibraryControllerPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F01B126ECD9710098789E /* LibraryControllerPro.swift */; };
+		FC5F01B426ECD9900098789E /* LibraryViewPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F01B326ECD9900098789E /* LibraryViewPro.swift */; };
+		FC5F01B626ECE3A50098789E /* LibraryCellPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F01B526ECE3A50098789E /* LibraryCellPro.swift */; };
+		FC5F01BA26ED09130098789E /* LibraryCellViewPro.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC5F01B926ED09130098789E /* LibraryCellViewPro.swift */; };
 		FC66C74326C2B53400346394 /* WishListController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C74226C2B53400346394 /* WishListController.swift */; };
 		FC66C74726C2B6D100346394 /* RentalController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C74626C2B6D100346394 /* RentalController.swift */; };
 		FC66C75326C406A800346394 /* Utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC66C75226C406A800346394 /* Utilities.swift */; };
@@ -128,6 +134,12 @@
 		FC4B5D3526BD6DC10065409F /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		FC4B5D3A26BD9CDD0065409F /* LibraryViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewModel.swift; sourceTree = "<group>"; };
 		FC4B5D3C26BDA3160065409F /* LibraryCellViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCellViewModel.swift; sourceTree = "<group>"; };
+		FC5F01AD26EBB1350098789E /* LoginViewPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewPro.swift; sourceTree = "<group>"; };
+		FC5F01AF26EBB1790098789E /* LoginControllerPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginControllerPro.swift; sourceTree = "<group>"; };
+		FC5F01B126ECD9710098789E /* LibraryControllerPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryControllerPro.swift; sourceTree = "<group>"; };
+		FC5F01B326ECD9900098789E /* LibraryViewPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryViewPro.swift; sourceTree = "<group>"; };
+		FC5F01B526ECE3A50098789E /* LibraryCellPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCellPro.swift; sourceTree = "<group>"; };
+		FC5F01B926ED09130098789E /* LibraryCellViewPro.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LibraryCellViewPro.swift; sourceTree = "<group>"; };
 		FC66C74226C2B53400346394 /* WishListController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WishListController.swift; sourceTree = "<group>"; };
 		FC66C74626C2B6D100346394 /* RentalController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RentalController.swift; sourceTree = "<group>"; };
 		FC66C75226C406A800346394 /* Utilities.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Utilities.swift; sourceTree = "<group>"; };
@@ -192,6 +204,8 @@
 				6554490226B984CC001D70E1 /* LoginView.xib */,
 				6554490026B984C3001D70E1 /* LoginView.swift */,
 				6554490426B984D7001D70E1 /* LoginController.swift */,
+				FC5F01AD26EBB1350098789E /* LoginViewPro.swift */,
+				FC5F01AF26EBB1790098789E /* LoginControllerPro.swift */,
 			);
 			path = Login;
 			sourceTree = "<group>";
@@ -234,6 +248,8 @@
 				F0D3362526BAAFC500B11648 /* LibraryView.swift */,
 				F0D3362926BAB04900B11648 /* LibraryController.swift */,
 				FC4B5D3A26BD9CDD0065409F /* LibraryViewModel.swift */,
+				FC5F01B326ECD9900098789E /* LibraryViewPro.swift */,
+				FC5F01B126ECD9710098789E /* LibraryControllerPro.swift */,
 			);
 			path = Library;
 			sourceTree = "<group>";
@@ -285,9 +301,9 @@
 				FC33993526DFA28600443EB7 /* Suggest */,
 				F0D3363326BC693300B11648 /* TabBar */,
 				F03B9E0426B817CC00B47EB9 /* ConfigureFiles */,
+				F0ECB5E626B32434009FA4B5 /* Assets.xcassets */,
 				F0ECB5DD26B32433009FA4B5 /* AppDelegate.swift */,
 				F0ECB5DF26B32433009FA4B5 /* SceneDelegate.swift */,
-				F0ECB5E626B32434009FA4B5 /* Assets.xcassets */,
 				F0ECB5E826B32434009FA4B5 /* LaunchScreen.storyboard */,
 				F0ECB5EB26B32434009FA4B5 /* Info.plist */,
 				FC4B5D2B26BD58790065409F /* Localizable.strings */,
@@ -361,6 +377,8 @@
 				F0D3362D26BABEF200B11648 /* LibraryCell.xib */,
 				F0D3362B26BABEC900B11648 /* LibraryCell.swift */,
 				FC4B5D3C26BDA3160065409F /* LibraryCellViewModel.swift */,
+				FC5F01B926ED09130098789E /* LibraryCellViewPro.swift */,
+				FC5F01B526ECE3A50098789E /* LibraryCellPro.swift */,
 			);
 			path = BookCell;
 			sourceTree = "<group>";
@@ -657,6 +675,7 @@
 			files = (
 				FC68424726C6A5F200555F5D /* BookDetailContainerView.swift in Sources */,
 				FC68425426C6AC3100555F5D /* CommentViewModel.swift in Sources */,
+				FC5F01BA26ED09130098789E /* LibraryCellViewPro.swift in Sources */,
 				FC68424B26C6A75600555F5D /* BookDetailViewModel.swift in Sources */,
 				FC68424926C6A71F00555F5D /* BookDetailController.swift in Sources */,
 				FC4B5D3D26BDA3160065409F /* LibraryCellViewModel.swift in Sources */,
@@ -667,6 +686,8 @@
 				FC66C76226C56DFD00346394 /* CommentRepository.swift in Sources */,
 				F0D3362626BAAFC500B11648 /* LibraryView.swift in Sources */,
 				FC68424526C6A53100555F5D /* BookDetailView.swift in Sources */,
+				FC5F01AE26EBB1350098789E /* LoginViewPro.swift in Sources */,
+				FC5F01B026EBB1790098789E /* LoginControllerPro.swift in Sources */,
 				FC1A8A7B26E132D70048D865 /* PostSuggest.swift in Sources */,
 				F0D3363226BC38FF00B11648 /* TabBarController.swift in Sources */,
 				6554490526B984D7001D70E1 /* LoginController.swift in Sources */,
@@ -677,11 +698,14 @@
 				FC20E95926C159A300F4E302 /* BookRepository.swift in Sources */,
 				F0ECB5DE26B32433009FA4B5 /* AppDelegate.swift in Sources */,
 				6554490126B984C3001D70E1 /* LoginView.swift in Sources */,
+				FC5F01B626ECE3A50098789E /* LibraryCellPro.swift in Sources */,
 				FC66C74726C2B6D100346394 /* RentalController.swift in Sources */,
 				FC4B5D3626BD6DC10065409F /* Book.swift in Sources */,
 				FC68423E26C6A17100555F5D /* BookDetailContainerController.swift in Sources */,
 				FC33993B26DFA37200443EB7 /* SuggestController.swift in Sources */,
+				FC5F01B226ECD9710098789E /* LibraryControllerPro.swift in Sources */,
 				FC1C8F8026DE448A00A753BF /* CommentCell.swift in Sources */,
+				FC5F01B426ECD9900098789E /* LibraryViewPro.swift in Sources */,
 				FC4B5D3B26BD9CDD0065409F /* LibraryViewModel.swift in Sources */,
 				FC66C75326C406A800346394 /* Utilities.swift in Sources */,
 				F0ECB5E026B32433009FA4B5 /* SceneDelegate.swift in Sources */,

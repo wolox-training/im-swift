@@ -55,7 +55,7 @@ extension UIButton {
         gradientLayer.endPoint = CGPoint(x: 1, y: 0.5)
         gradientLayer.cornerRadius = 22
         self.layer.insertSublayer(gradientLayer, at: 0)
-//        setTitleColor(.white, for: .normal)
+        //        setTitleColor(.white, for: .normal)
     }
 }
 

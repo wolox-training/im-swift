@@ -12,7 +12,8 @@ class TabBarController: UITabBarController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        let library = LibraryController()
+//        let library = LibraryController()
+        let library = LibraryControllerPro()
         library.tabBarItem = UITabBarItem()
         library.tabBarItem.title = "Library"
         library.tabBarItem.image = UIImage(named: "ic_library active")
